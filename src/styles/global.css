@@ -552,64 +552,65 @@
     .hero-visual-wrapper {
       position: relative;
       width: 100%;
-      max-width: 660px;
-      height: 580px;
+      max-width: 580px;
+      height: 540px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    .hero-swoosh-backdrop {
+    /* Outer Soft Orbit Ring with 2 Purple Planet Dots (Exact match to user screenshot) */
+    .hero-orbit-ring {
       position: absolute;
-      top: 2%;
-      right: -2%;
       width: 530px;
       height: 530px;
-      background: radial-gradient(circle at 40% 40%, rgba(237, 233, 246, 0.9) 0%, rgba(224, 231, 255, 0.6) 60%, rgba(246, 247, 249, 0) 100%);
-      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      border-radius: 50%;
+      border: 3px solid rgba(139, 113, 176, 0.45);
+      background: radial-gradient(circle, rgba(240, 237, 248, 0.5) 0%, rgba(240, 237, 248, 0) 70%);
       z-index: 1;
-      filter: blur(4px);
-    }
-
-    .hero-dot-grid {
-      position: absolute;
-      top: -10px;
-      left: 6%;
-      width: 150px;
-      height: 150px;
-      background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
-      background-size: 12px 12px;
-      opacity: 0.8;
-      z-index: 1;
-    }
-
-    .hero-flowing-lines {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
       pointer-events: none;
-      z-index: 2;
+      box-shadow: 0 0 50px rgba(139, 113, 176, 0.12);
     }
 
-    .hero-image-container {
+    .orbit-dot {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #8b71b0;
+      box-shadow: 0 0 10px rgba(139, 113, 176, 0.6);
+    }
+
+    .orbit-dot-top-left {
+      top: 24%;
+      left: 3%;
+    }
+
+    .orbit-dot-bottom-right {
+      bottom: 27%;
+      right: 3%;
+    }
+
+    /* Circular Portrait Image Frame */
+    .hero-image-circle-frame {
       position: relative;
-      z-index: 3;
-      width: 100%;
-      height: 100%;
+      z-index: 2;
+      width: 440px;
+      height: 440px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(26, 47, 84, 0.15), 0 0 0 8px #ffffff;
+      background: #f0f3f8;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: center;
     }
 
-    .hero-gabriel-img {
-      max-height: 560px;
-      width: auto;
-      object-fit: contain;
-      transform: scale(1.05);
-      transform-origin: bottom center;
-      filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.1));
+    .hero-gabriel-circle-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
     }
 
     /* Floating cards */
@@ -674,18 +675,18 @@
     }
 
     .card-top-right {
-      top: 10%;
-      right: -12%;
+      top: 6%;
+      right: -25px;
     }
 
     .card-mid-left {
-      top: 44%;
-      left: -2%;
+      top: 48%;
+      left: -40px;
     }
 
     .card-bottom-right {
-      bottom: 12%;
-      right: 0%;
+      bottom: 10%;
+      right: -15px;
     }
 
     /* Floating Stat Badge */
