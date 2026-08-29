@@ -1,0 +1,262 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Pop Digital Solutions | Websites, Marketing & Firmenauftritt",
+  description = "Pop Digital Solutions – Websites, Marketing, Digitale Lösungen & Firmenausstattung in Österreich."
+} = Astro.props;
+
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta name="robots" content="index, follow">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <slot />
+
+  <script is:inline>
+// ==========================================================================
+    // POP DIGITAL SOLUTIONS — SINGLE FILE INTERACTIVITY & CONFIGURATOR
+    // ==========================================================================
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Configurator radio selection
+      window.selectConfigOption = function (element, situationName) {
+        document.querySelectorAll('.config-radio-item').forEach(item => {
+          item.classList.remove('active');
+        });
+        element.classList.add('active');
+
+        // Sync with modal select
+        const select = document.getElementById('form-situation');
+        if (select) {
+          select.value = situationName;
+        }
+      };
+
+      // Inquiry Modal Management
+      const modal = document.getElementById('project-modal');
+      const closeBtn = document.getElementById('modal-close');
+      const openButtons = document.querySelectorAll('.open-modal-btn');
+      const situationSelect = document.getElementById('form-situation');
+
+      openButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const customSituation = btn.getAttribute('data-situation');
+          if (customSituation && situationSelect) {
+            situationSelect.value = customSituation;
+          }
+          if (modal) {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
+      if (closeBtn && modal) {
+        closeBtn.addEventListener('click', () => {
+          modal.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+
+      // Legal Modals Management (Impressum & Datenschutz)
+      const impressumModal = document.getElementById('impressum-modal');
+      const openImpressum = document.getElementById('openImpressumModal');
+      const closeImpressum = document.getElementById('impressum-close');
+
+      if (openImpressum && impressumModal) {
+        openImpressum.addEventListener('click', (e) => {
+          e.preventDefault();
+          impressumModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      }
+
+      if (closeImpressum && impressumModal) {
+        closeImpressum.addEventListener('click', () => {
+          impressumModal.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+
+      const datenschutzModal = document.getElementById('datenschutz-modal');
+      const openDatenschutz = document.getElementById('openDatenschutzModal');
+      const closeDatenschutz = document.getElementById('datenschutz-close');
+
+      if (openDatenschutz && datenschutzModal) {
+        openDatenschutz.addEventListener('click', (e) => {
+          e.preventDefault();
+          datenschutzModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      }
+
+      if (closeDatenschutz && datenschutzModal) {
+        closeDatenschutz.addEventListener('click', () => {
+          datenschutzModal.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+
+      // Form submission handling
+      const form = document.getElementById('project-request-form');
+      const successMsg = document.getElementById('form-success');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          form.style.display = 'none';
+          if (successMsg) successMsg.style.display = 'block';
+
+          setTimeout(() => {
+            form.reset();
+            form.style.display = 'block';
+            if (successMsg) successMsg.style.display = 'none';
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+          }, 4000);
+        });
+      }
+
+      // ScrollSpy for Floating Pill Nav
+      const sections = document.querySelectorAll('section[id], footer[id]');
+      const pillLinks = document.querySelectorAll('.weroast-floating-pill .pill-item');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 150;
+          if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        pillLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      // Tech Tabs Switcher (Matching User Screenshot)
+      window.switchTechTab = function (element, tabIndex) {
+        const btns = document.querySelectorAll('.tech-tab-btn');
+        const panels = document.querySelectorAll('.tech-tab-panel');
+
+        btns.forEach(btn => btn.classList.remove('active'));
+        panels.forEach(panel => panel.style.display = 'none');
+
+        element.classList.add('active');
+        const activePanel = document.getElementById('tech-panel-' + tabIndex);
+        if (activePanel) {
+          activePanel.style.display = 'grid';
+        }
+      };
+
+      // Mobile Menu Toggle Logic
+      const mobileToggle = document.getElementById('mobile-menu-toggle');
+      const mobileNavDrawer = document.getElementById('mobile-nav-drawer');
+
+      if (mobileToggle && mobileNavDrawer) {
+        mobileToggle.addEventListener('click', (e) => {
+          e.stopPropagation();
+          mobileToggle.classList.toggle('active');
+          mobileNavDrawer.classList.toggle('active');
+        });
+
+        // Close drawer when clicking any link or modal trigger inside
+        const drawerInteractiveItems = mobileNavDrawer.querySelectorAll('a, button');
+        drawerInteractiveItems.forEach(item => {
+          item.addEventListener('click', () => {
+            mobileToggle.classList.remove('active');
+            mobileNavDrawer.classList.remove('active');
+          });
+        });
+
+        // Close drawer when clicking outside
+        document.addEventListener('click', (e) => {
+          if (!mobileNavDrawer.contains(e.target) && !mobileToggle.contains(e.target)) {
+            mobileToggle.classList.remove('active');
+            mobileNavDrawer.classList.remove('active');
+          }
+        });
+      }
+
+      // Mobile Process Steps Circle Navigation (Back & After Arrows)
+      let currentCircleStep = 0;
+      const totalCircleSteps = 3;
+
+      window.setCircleStep = function (stepIndex) {
+        if (stepIndex < 0) stepIndex = totalCircleSteps - 1;
+        if (stepIndex >= totalCircleSteps) stepIndex = 0;
+        currentCircleStep = stepIndex;
+
+        const row = document.getElementById('circular-steps-row');
+        if (row) {
+          row.style.transform = `translateX(-${stepIndex * (100 / totalCircleSteps)}%)`;
+        }
+      };
+
+      window.prevCircleStep = function () {
+        window.setCircleStep(currentCircleStep - 1);
+      };
+
+      window.nextCircleStep = function () {
+        window.setCircleStep(currentCircleStep + 1);
+      };
+
+      // Swipe Gesture Support for Mobile Circle Track
+      const processTrack = document.querySelector('#vorgehen .circular-flow-track');
+      if (processTrack) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        processTrack.addEventListener('touchstart', (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        processTrack.addEventListener('touchend', (e) => {
+          touchEndX = e.changedTouches[0].screenX;
+          if (touchStartX - touchEndX > 35) {
+            window.nextCircleStep();
+          } else if (touchEndX - touchStartX > 35) {
+            window.prevCircleStep();
+          }
+        }, { passive: true });
+      }
+
+
+
+    });
+  </script>
+</body>
+</html>

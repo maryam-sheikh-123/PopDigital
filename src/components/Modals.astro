@@ -1,0 +1,63 @@
+---
+---
+<div class="modal-overlay" id="project-modal">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modal-close">×</button>
+      <div class="modal-header">
+        <h3 class="modal-title">Projekt anfragen</h3>
+        <p class="modal-subtitle">Gabriel Pop meldet sich persönlich bei Ihnen.</p>
+      </div>
+
+      <form id="project-request-form">
+        <div class="form-group">
+          <label class="form-label">Ausgangslage</label>
+          <select class="form-input" id="form-situation">
+            <option value="Professionell starten">Professionell starten</option>
+            <option value="Website modernisieren">Website modernisieren (Relaunch)</option>
+            <option value="Marke &amp; Sichtbarkeit stärken">Marke &amp; Sichtbarkeit stärken</option>
+            <option value="Abläufe digital verbessern">Abläufe digital verbessern</option>
+            <option value="Firma oder Team ausstatten">Firma oder Team ausstatten</option>
+          </select>
+        </div>
+
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label class="form-label">Ihr Name *</label>
+            <input type="text" class="form-input" placeholder="z.B. Markus Huber" required="">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Firma / Organisation</label>
+            <input type="text" class="form-input" placeholder="z.B. Huber GmbH">
+          </div>
+        </div>
+
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label class="form-label">E-Mail Adresse *</label>
+            <input type="email" class="form-input" placeholder="name@firma.at" required="">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Telefonnummer</label>
+            <input type="tel" class="form-input" placeholder="+43 670 ...">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Nachricht / Projektbeschreibung</label>
+          <textarea class="form-input form-textarea" placeholder="Beschreiben Sie kurz Ihr Vorhaben..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit-modal">Anfrage unverbindlich senden</button>
+      </form>
+
+      <div id="form-success" style="display: none; text-align: center; padding-block: 2rem;">
+        <div style="font-size: 3rem; margin-bottom: 0.5rem;">🎉</div>
+        <h4 style="font-size: 1.35rem; font-weight: 800; color: var(--brand-navy); margin-bottom: 0.5rem;">Vielen Dank
+          für Ihre Anfrage!</h4>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Gabriel Pop wird sich innerhalb von 24 Stunden
+          persönlich bei Ihnen melden.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INLINE JAVASCRIPT -->
