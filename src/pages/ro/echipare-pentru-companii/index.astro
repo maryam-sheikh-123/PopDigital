@@ -1,0 +1,32 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+
+import EquipmentHero from '../../../components/equipment/EquipmentHero.astro';
+import FitRequirementsChecklist from '../../../components/equipment/FitRequirementsChecklist.astro';
+import ProductFamiliesTactile from '../../../components/equipment/ProductFamiliesTactile.astro';
+import BrandApplicationData from '../../../components/equipment/BrandApplicationData.astro';
+import ApprovalSpecification from '../../../components/equipment/ApprovalSpecification.astro';
+import EquipmentProcessSteps from '../../../components/equipment/EquipmentProcessSteps.astro';
+import FinalEquipmentInquiry from '../../../components/equipment/FinalEquipmentInquiry.astro';
+---
+
+<Layout 
+  title="Equipment for companies | Pop Digital Solutions" 
+  description="Work and corporate clothing, printed materials, visual advertising and lettering adapted to the company's use and image.">
+  
+  <Header />
+
+  <main>
+    <EquipmentHero />
+    <FitRequirementsChecklist />
+    <ProductFamiliesTactile />
+    <BrandApplicationData />
+    <ApprovalSpecification />
+    <EquipmentProcessSteps />
+    <FinalEquipmentInquiry />
+  </main>
+
+  <Footer />
+</Layout>

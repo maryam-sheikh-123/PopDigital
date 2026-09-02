@@ -1,0 +1,208 @@
+---
+---
+<section class="section-professional-path" id="path">
+  <div class="container">
+    <div class="pp-layout">
+      
+      <!-- Headline / Title -->
+      <div class="pp-header">
+        <span class="pp-eyebrow">Persoana din spatele companiei</span>
+        <h2 class="pp-title">
+          Înțelegere tehnică și perspectivă antreprenorială.
+        </h2>
+      </div>
+
+      <!-- Asymmetrical Timeline -->
+      <div class="pp-timeline-area">
+        <div class="timeline-axis"></div>
+        
+        <div class="timeline-nodes">
+          
+          <div class="timeline-node">
+            <div class="node-marker"></div>
+            <div class="node-content">
+              <p class="node-text">
+                Gabriel Antonio Pop și-a început parcursul profesional ca dezvoltator web. Ulterior, a lucrat ca asistent al conducerii, cu accent pe comerț electronic și marketing.
+              </p>
+            </div>
+          </div>
+          
+          <div class="timeline-node staggered">
+            <div class="node-marker"></div>
+            <div class="node-content">
+              <p class="node-text">
+                Această combinație îi influențează activitatea și în prezent: soluțiile digitale nu sunt privite izolat. Important este modul în care se potrivesc unei companii, proceselor sale și clienților săi.
+              </p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-marker"></div>
+            <div class="node-content">
+              <p class="node-text">
+                Prin Pop Digital Solutions, Gabriel a creat o companie care reunește coerent sarcini tehnice, creative și practice într-un proiect clar condus.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- Principle Box -->
+        <div class="pp-principle">
+          <span class="principle-label">Principiul lui Gabriel</span>
+          <p class="principle-text">
+            Mai întâi înțelege obiectivul, apoi reunește pașii potriviți și își asumă personal coordonarea implementării.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-professional-path {
+    padding: 8rem 0;
+    background: #f8fafc;
+  }
+
+  .pp-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 6rem;
+  }
+
+  .pp-header {
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+    align-self: flex-start;
+  }
+
+  .pp-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--brand-purple);
+    margin-bottom: 1.5rem;
+  }
+
+  .pp-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 3.5vw, 3rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.15;
+  }
+
+  .pp-timeline-area {
+    position: relative;
+    padding-left: 3rem;
+  }
+
+  /* The vertical axis */
+  .timeline-axis {
+    position: absolute;
+    top: 1rem;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background: var(--border-subtle);
+  }
+
+  .timeline-nodes {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 6rem;
+  }
+
+  .timeline-node {
+    position: relative;
+    width: 80%;
+  }
+  .timeline-node.staggered {
+    align-self: flex-end;
+    margin-right: -2rem;
+  }
+
+  .node-marker {
+    position: absolute;
+    top: 0.5rem;
+    left: -3.45rem; /* center on axis */
+    width: 1rem;
+    height: 1rem;
+    background: var(--brand-navy);
+    border-radius: 50%;
+  }
+
+  .node-content {
+    background: #ffffff;
+    padding: 2.5rem;
+    border: 1px solid var(--border-light);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+  }
+
+  .node-text {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .pp-principle {
+    background: var(--brand-navy);
+    color: #ffffff;
+    padding: 3rem;
+    position: relative;
+    margin-left: -1.5rem;
+  }
+  .pp-principle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -1.5rem;
+    width: 1.5rem;
+    height: 2px;
+    background: var(--brand-purple);
+  }
+
+  .principle-label {
+    display: block;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--brand-purple);
+    margin-bottom: 1rem;
+  }
+
+  .principle-text {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  @media (max-width: 960px) {
+    .pp-layout {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+    .pp-header {
+      position: static;
+    }
+    .timeline-node {
+      width: 100%;
+    }
+    .timeline-node.staggered {
+      align-self: flex-start;
+      margin-right: 0;
+    }
+    .pp-principle {
+      margin-left: 0;
+    }
+  }
+</style>

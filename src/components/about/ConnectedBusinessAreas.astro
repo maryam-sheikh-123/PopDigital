@@ -1,0 +1,170 @@
+---
+---
+<section class="section-business-areas" id="areas">
+  <div class="container">
+    
+    <div class="ba-header">
+      <span class="weroast-badge-pill" style="margin-bottom: 2rem;">Domeniile noastre</span>
+      <h2 class="ba-title">Trei domenii. Un obiectiv comun.</h2>
+    </div>
+
+    <!-- Architectural Three Pillar Grid -->
+    <div class="ba-pillars">
+      
+      <!-- Pillar 1 -->
+      <div class="ba-pillar">
+        <h3 class="pillar-title">Soluții digitale</h3>
+        <p class="pillar-desc">
+          Website-uri noi, relansări și soluții digitale personalizate, planificate pornind de la nevoia reală.
+        </p>
+        <a href="/ro/solutii-digitale-personalizate/" class="pillar-link">
+          Vedeți soluțiile digitale
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Pillar 2 -->
+      <div class="ba-pillar">
+        <h3 class="pillar-title">Marketing și design</h3>
+        <p class="pillar-desc">
+          Poziționare, design, conținut și măsuri selectate pentru o prezență clară și coerentă.
+        </p>
+        <a href="/ro/marketing-design/" class="pillar-link">
+          Marketing și design
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Pillar 3 -->
+      <div class="ba-pillar">
+        <h3 class="pillar-title">Echipare pentru companii</h3>
+        <p class="pillar-desc">
+          Îmbrăcăminte, materiale tipărite, semnalistică și articole promoționale selectate duc identitatea în activitatea zilnică.
+        </p>
+        <a href="/ro/echipare-pentru-companii/" class="pillar-link">
+          Echiparea companiei
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="ba-footer">
+      <p>Nu toate companiile au nevoie de toate cele trei domenii. Contează ceea ce se potrivește situației și obiectivului dumneavoastră.</p>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .section-business-areas {
+    padding: 8rem 0;
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .ba-header {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  .ba-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 4vw, 3.4rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  /* Three Pillar Grid with Borders */
+  .ba-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .ba-pillar {
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border-light);
+  }
+  .ba-pillar:last-child {
+    border-right: none;
+  }
+
+  .pillar-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--brand-navy);
+    margin-bottom: 1.5rem;
+  }
+
+  .pillar-desc {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    flex-grow: 1;
+  }
+
+  .pillar-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--brand-purple);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.3s;
+  }
+  .pillar-link svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s;
+  }
+  .pillar-link:hover {
+    color: var(--brand-navy);
+  }
+  .pillar-link:hover svg {
+    transform: translateX(4px);
+  }
+
+  .ba-footer {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  @media (max-width: 900px) {
+    .ba-pillars {
+      grid-template-columns: 1fr;
+      border-bottom: none;
+    }
+    .ba-pillar {
+      border-right: none;
+      border-bottom: 1px solid var(--border-light);
+      padding: 3rem 0;
+    }
+    .ba-pillar:last-child {
+      border-bottom: 1px solid var(--border-light);
+    }
+  }
+</style>

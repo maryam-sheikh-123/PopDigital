@@ -1,0 +1,167 @@
+---
+---
+<section class="section-tech-map" id="technology">
+  <div class="container">
+    <div class="tm-grid">
+      
+      <div class="tm-left">
+        <span class="weroast-badge-pill" style="margin-bottom: 1.5rem; background: var(--bg-white); border: 1px solid var(--border-light); color: var(--text-muted); border-radius: 0;">
+          Technology follows requirements
+        </span>
+        <h2 class="tm-title">
+          Soluția este planificată ca un sistem coerent.
+        </h2>
+        <p class="tm-desc">
+          Interfața, logica aplicației, stocarea datelor, integrările și mediul de găzduire (deployment) pot juca roluri diferite. Deciziile tehnice se iau doar după înțelegerea problemei, a ariei proiectului și a condițiilor.
+        </p>
+        <p class="tm-footer">
+          Rezultatele intermediare sunt verificate la momente stabilite. Mentenanța, operarea continuă și extinderile fac parte din proiect doar dacă sunt convenite expres.
+        </p>
+      </div>
+
+      <div class="tm-right">
+        <!-- System Map Visual -->
+        <div class="sys-map-container">
+          
+          <div class="sys-layer layer-top">
+            <span class="layer-label">Utilizare</span>
+            <p>funcții, procese și criterii de acceptare;</p>
+            <p>date prelucrate, utilizatori și drepturi;</p>
+          </div>
+          
+          <div class="sys-layer layer-middle">
+            <span class="layer-label">Infrastructură & Integrare</span>
+            <p>sisteme existente, acces și responsabilități;</p>
+            <p>găzduire, operare și mentenanță agreate expres;</p>
+          </div>
+          
+          <div class="sys-layer layer-bottom">
+            <span class="layer-label">Predare & Control</span>
+            <p>acces, drepturi, documentație și predare.</p>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-tech-map {
+    padding: 8rem 0;
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .tm-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .tm-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 3.5vw, 2.8rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  .tm-desc {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+  }
+
+  .tm-footer {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-style: italic;
+    padding-left: 1rem;
+    border-left: 2px solid var(--border-light);
+    line-height: 1.5;
+  }
+
+  .sys-map-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  .sys-map-container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20px;
+    bottom: 20px;
+    width: 1px;
+    background: var(--brand-navy);
+  }
+
+  .sys-layer {
+    padding: 2.5rem;
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    margin-bottom: -1px;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  .sys-layer:hover {
+    transform: translateX(10px);
+    z-index: 2;
+    border-color: var(--brand-navy);
+  }
+
+  /* Connecting notch */
+  .sys-layer::before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 30px;
+    width: 1.5rem;
+    height: 1px;
+    background: var(--brand-navy);
+  }
+
+  .layer-label {
+    display: block;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.85rem;
+    color: var(--brand-purple);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+  }
+
+  .sys-layer p {
+    font-size: 1.1rem;
+    color: var(--brand-navy);
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    padding-left: 1.25rem;
+  }
+  .sys-layer p::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--border-subtle);
+  }
+  .sys-layer p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 900px) {
+    .tm-grid {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+    .sys-layer {
+      padding: 1.5rem;
+    }
+  }
+</style>

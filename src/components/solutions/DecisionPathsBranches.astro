@@ -1,0 +1,254 @@
+---
+---
+<section class="section-decision-paths" id="paths">
+  <div class="container">
+    <div class="dp-header text-center">
+      <span class="weroast-badge-pill" style="margin-bottom: 1.5rem;">
+        Sunt posibile mai multe direcții
+      </span>
+      <h2 class="dp-title">
+        Produs standard, integrare, automatizare sau dezvoltare personalizată.
+      </h2>
+    </div>
+
+    <div class="dp-tree-container">
+      
+      <!-- Central Node -->
+      <div class="tree-root">
+        Analiza Procesului
+      </div>
+
+      <!-- Vertical line down from root -->
+      <div class="tree-trunk"></div>
+
+      <!-- Branches -->
+      <div class="tree-branches">
+        
+        <!-- Branch 1 -->
+        <div class="tree-branch branch-left">
+          <div class="branch-line line-left"></div>
+          <div class="branch-content">
+            <h3 class="branch-title">Soluție standard</h3>
+            <p class="branch-text">
+              Dacă un produs existent acoperă cerințele esențiale, implementarea sau configurarea lui poate fi mai eficientă decât dezvoltarea de la zero.
+            </p>
+          </div>
+        </div>
+
+        <!-- Branch 2 -->
+        <div class="tree-branch branch-right">
+          <div class="branch-line line-right"></div>
+          <div class="branch-content">
+            <h3 class="branch-title">Integrarea sistemelor</h3>
+            <p class="branch-text">
+              O interfață sau un transfer coordonat de date poate asigura conexiunea dintre aplicațiile existente.
+            </p>
+          </div>
+        </div>
+
+        <!-- Branch 3 -->
+        <div class="tree-branch branch-left">
+          <div class="branch-line line-left"></div>
+          <div class="branch-content">
+            <h3 class="branch-title">Automatizarea proceselor</h3>
+            <p class="branch-text">
+              Pașii repetitivi, notificările și fluxurile de documente pot fi automatizate când regulile și responsabilitățile sunt clare.
+            </p>
+          </div>
+        </div>
+
+        <!-- Branch 4 -->
+        <div class="tree-branch branch-right">
+          <div class="branch-line line-right"></div>
+          <div class="branch-content">
+            <h3 class="branch-title highlight-title">Dezvoltare personalizată</h3>
+            <p class="branch-text">
+              O aplicație web, un instrument intern sau o funcție proprie poate fi potrivită când produsele standard nu susțin procesul esențial.
+            </p>
+          </div>
+        </div>
+
+        <!-- Branch 5 -->
+        <div class="tree-branch branch-center">
+          <div class="branch-line line-center"></div>
+          <div class="branch-content terminal-node">
+            <h3 class="branch-title text-muted">Decizie argumentată</h3>
+            <p class="branch-text">
+              Analiza poate arăta că implementarea nu este oportună sau că trebuie create mai întâi anumite condiții.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .section-decision-paths {
+    padding: 8rem 0;
+    background: #f8fafc;
+  }
+  
+  .dp-header {
+    max-width: 700px;
+    margin: 0 auto 5rem;
+  }
+  .dp-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 800;
+    color: var(--brand-navy);
+    line-height: 1.2;
+  }
+
+  .dp-tree-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .tree-root {
+    background: var(--brand-navy);
+    color: #ffffff;
+    padding: 1.25rem 3rem;
+    border-radius: var(--radius-full);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(15, 27, 48, 0.15);
+  }
+
+  .tree-trunk {
+    width: 2px;
+    height: 40px;
+    background: var(--border-subtle);
+  }
+
+  .tree-branches {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* The continuous central trunk line */
+  .tree-branches::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background: var(--border-subtle);
+    z-index: 1;
+  }
+
+  .tree-branch {
+    position: relative;
+    width: 50%;
+    margin-bottom: 2rem;
+    z-index: 2;
+    display: flex;
+  }
+  
+  .branch-left {
+    align-self: flex-start;
+    justify-content: flex-end;
+    padding-right: 3rem;
+    text-align: right;
+  }
+  .branch-right {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 3rem;
+    text-align: left;
+  }
+  .branch-center {
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  /* Horizontal connecting lines */
+  .branch-line {
+    position: absolute;
+    top: 24px;
+    height: 2px;
+    width: 3rem;
+    background: var(--border-subtle);
+  }
+  .line-left { right: 0; }
+  .line-right { left: 0; }
+  .line-center { display: none; } /* Central node relies on main trunk */
+
+  .branch-content {
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    position: relative;
+  }
+  
+  .terminal-node {
+    background: transparent;
+    border: 1px dashed var(--border-subtle);
+    box-shadow: none;
+    max-width: 450px;
+    text-align: center;
+  }
+
+  .branch-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--brand-navy);
+    margin-bottom: 0.75rem;
+  }
+  .highlight-title { color: var(--brand-purple); }
+  .text-muted { color: var(--text-muted); }
+
+  .branch-text {
+    font-size: 1rem;
+    color: var(--text-dark);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    .tree-branches::before {
+      left: 24px;
+    }
+    .tree-branch {
+      width: 100%;
+      align-self: flex-start !important;
+      justify-content: flex-start !important;
+      padding-left: 4rem !important;
+      padding-right: 0 !important;
+      text-align: left !important;
+    }
+    .branch-line {
+      left: 24px !important;
+      width: calc(4rem - 24px) !important;
+    }
+    .branch-content {
+      max-width: 100%;
+    }
+    .tree-trunk {
+      align-self: flex-start;
+      margin-left: 24px;
+    }
+  }
+</style>

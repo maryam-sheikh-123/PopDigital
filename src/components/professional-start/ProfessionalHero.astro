@@ -1,0 +1,234 @@
+---
+---
+<section class="section-prof-hero" id="hero">
+  <div class="container prof-hero-container">
+    <div class="prof-hero-content">
+      <div class="prof-hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        Professional start
+      </div>
+      <h1 class="prof-hero-title">
+        Construim împreună website-ul și prezența companiei dumneavoastră, de la zero.
+      </h1>
+      <p class="prof-hero-lead">
+        Doriți să vă prezentați profesional pentru prima dată sau să înlocuiți o soluție provizorie? Creăm o prezență potrivită companiei – de la mesajele principale și design până la implementarea tehnică.
+      </p>
+      <p class="prof-hero-body">
+        Gabriel Pop conduce personal proiectul și rămâne principala persoană de contact, de la prima discuție până la predare.
+      </p>
+      <div class="prof-hero-ctas">
+        <a href="/contact/" class="btn-prof-primary">Discutați despre noua prezență</a>
+        <a href="#exemplu" class="btn-prof-secondary">Vedeți un exemplu</a>
+      </div>
+    </div>
+    
+    <div class="prof-hero-visual">
+      <div class="abstract-composition">
+        <div class="scatter-element scatter-circle"></div>
+        <div class="scatter-element scatter-square"></div>
+        <div class="scatter-element scatter-triangle">
+          <svg viewBox="0 0 100 100" fill="currentColor"><polygon points="50,10 90,90 10,90" /></svg>
+        </div>
+        <div class="cohesive-core">
+          <svg class="core-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <svg class="connection-lines" viewBox="0 0 400 400">
+          <path d="M80,80 Q200,200 200,200" class="draw-line" />
+          <path d="M320,100 Q200,200 200,200" class="draw-line" />
+          <path d="M150,320 Q200,200 200,200" class="draw-line" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-prof-hero {
+    padding-top: calc(var(--header-height) + 4rem);
+    padding-bottom: 5rem;
+    background: linear-gradient(180deg, var(--bg-page) 0%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .prof-hero-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  .prof-hero-content {
+    max-width: 600px;
+    z-index: 2;
+  }
+  .prof-hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--brand-purple);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.25rem;
+    background: var(--brand-purple-soft);
+    padding: 0.4rem 1rem;
+    border-radius: var(--radius-full);
+  }
+  .eyebrow-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--brand-purple);
+    border-radius: 50%;
+  }
+  .prof-hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+  .prof-hero-lead {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .prof-hero-body {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    border-left: 2px solid var(--border-light);
+    padding-left: 1rem;
+  }
+  .prof-hero-ctas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .btn-prof-primary {
+    background: var(--brand-navy);
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(26, 47, 84, 0.15);
+  }
+  .btn-prof-primary:hover {
+    background: #0f1b30;
+    transform: translateY(-2px);
+  }
+  .btn-prof-secondary {
+    background: #fff;
+    color: var(--text-dark);
+    padding: 0.8rem 1.8rem;
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    border: 1px solid var(--border-light);
+  }
+  .btn-prof-secondary:hover {
+    border-color: var(--brand-navy);
+  }
+
+  /* Abstract Composition */
+  .prof-hero-visual {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .abstract-composition {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    box-shadow: inset 0 0 40px rgba(105, 83, 138, 0.05);
+  }
+  .scatter-element {
+    position: absolute;
+    animation: float 6s ease-in-out infinite;
+  }
+  .scatter-circle {
+    width: 60px;
+    height: 60px;
+    background: var(--accent-yellow);
+    border-radius: 50%;
+    top: 50px;
+    left: 50px;
+  }
+  .scatter-square {
+    width: 50px;
+    height: 50px;
+    background: var(--accent-emerald);
+    border-radius: 12px;
+    bottom: 60px;
+    left: 120px;
+    transform: rotate(15deg);
+    animation-delay: -2s;
+  }
+  .scatter-triangle {
+    width: 70px;
+    height: 70px;
+    color: var(--accent-blue);
+    top: 80px;
+    right: 40px;
+    animation-delay: -4s;
+  }
+  .cohesive-core {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background: var(--brand-purple);
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(105, 83, 138, 0.3);
+    z-index: 5;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  .core-icon {
+    width: 48px;
+    height: 48px;
+  }
+  .connection-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .draw-line {
+    fill: none;
+    stroke: var(--border-light);
+    stroke-width: 2;
+    stroke-dasharray: 6 6;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
+  }
+  @keyframes pulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.05); }
+  }
+
+  @media (max-width: 900px) {
+    .prof-hero-container { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
+    .prof-hero-content { margin: 0 auto; }
+    .prof-hero-body { border-left: none; border-top: 2px solid var(--border-light); padding-left: 0; padding-top: 1rem; }
+    .prof-hero-ctas { justify-content: center; }
+  }
+</style>

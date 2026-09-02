@@ -1,0 +1,198 @@
+---
+---
+<section class="section-about-hero" id="hero">
+  <div class="container">
+    <div class="ah-wrapper">
+      
+      <!-- Left: Stark Typography -->
+      <div class="ah-text">
+        <span class="ah-eyebrow">Despre Pop Digital Solutions</span>
+        <h1 class="ah-title">
+          Conducere personală.<br/>
+          Organizare clară.<br/>
+          Soluții concepute pentru companii.
+        </h1>
+        
+        <div class="ah-body-content">
+          <p class="ah-lead">
+            Pop Digital Solutions EU sprijină companiile în dezvoltarea prezenței digitale, a vizibilității și a echipării profesionale.
+          </p>
+          <p class="ah-text-block">
+            Gabriel Antonio Pop conduce personal fiecare proiect. El clarifică obiectivele, ce include proiectul și responsabilitățile, și rămâne persoana centrală de contact pe tot parcursul colaborării.
+          </p>
+          <p class="ah-text-block">
+            Echipa noastră reunește competențe din dezvoltare, design, marketing și producție. Domeniile implicate depind de proiect.
+          </p>
+        </div>
+        
+        <div class="ah-action">
+          <a href="/contact/" class="btn-ah-primary">
+            Discutați proiectul cu Gabriel
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Editorial Portrait 3:4 -->
+      <div class="ah-visual">
+        <div class="portrait-frame">
+          <img src="/images/gabriel-antonio-pop.png" alt="Gabriel Antonio Pop" class="portrait-img">
+          <div class="portrait-caption">
+            <strong>Gabriel Antonio Pop</strong>
+            <span>Fondator și proprietar al Pop Digital Solutions e.U.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-about-hero {
+    padding-top: calc(var(--header-height) + 5rem);
+    padding-bottom: 8rem;
+    background: #ffffff;
+  }
+
+  .ah-wrapper {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .ah-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 0.5rem;
+  }
+
+  .ah-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.15;
+    margin-bottom: 3rem;
+    letter-spacing: -0.02em;
+  }
+
+  .ah-body-content {
+    margin-bottom: 3rem;
+    border-left: 2px solid var(--brand-purple);
+    padding-left: 2rem;
+  }
+
+  .ah-lead {
+    font-size: 1.25rem;
+    color: var(--brand-navy);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+
+  .ah-text-block {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .ah-text-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .ah-action {
+    display: flex;
+  }
+
+  .btn-ah-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 2rem;
+    background: var(--brand-navy);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  .btn-ah-primary:hover {
+    background: #0f1b30;
+  }
+  .btn-ah-primary svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  .btn-ah-primary:hover svg {
+    transform: translateX(6px);
+  }
+
+  /* Portrait Styling */
+  .ah-visual {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .portrait-frame {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    /* 3:4 aspect ratio wrapper */
+    aspect-ratio: 3 / 4;
+  }
+  
+  .portrait-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* Calm editorial treatment */
+    filter: contrast(1.05) saturate(1.1);
+  }
+
+  .portrait-caption {
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  }
+  .portrait-caption strong {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--brand-navy);
+    margin-bottom: 0.25rem;
+  }
+  .portrait-caption span {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  @media (max-width: 960px) {
+    .ah-wrapper {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+    .ah-visual {
+      justify-content: flex-start;
+      padding-right: 1rem;
+    }
+  }
+</style>

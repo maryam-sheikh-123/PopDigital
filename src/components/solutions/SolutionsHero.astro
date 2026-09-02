@@ -1,0 +1,229 @@
+---
+---
+<section class="section-solutions-hero" id="hero">
+  <div class="container">
+    <div class="sh-wrapper">
+      
+      <!-- Text Area -->
+      <div class="sh-content">
+        <span class="weroast-badge-pill" style="margin-bottom: 2rem; background: #ffffff; border: 1px solid var(--border-light); color: var(--text-muted); border-radius: 4px; font-family: monospace; letter-spacing: 0.05em;">
+          Customized digital solutions
+        </span>
+        <h1 class="sh-title">
+          Nu fiecare provocare necesită un software nou. Mai întâi este nevoie de o decizie clară.
+        </h1>
+        <p class="sh-lead">
+          Munca manuală repetitivă, introducerea acelorași date de mai multe ori sau sistemele deconectate pot îngreuna activitatea. Cu toate acestea, dezvoltarea personalizată nu este automat cea mai bună alegere.
+        </p>
+        <p class="sh-body">
+          Analizăm procesul actual și rezultatul dorit. Apoi clarificăm dacă soluția potrivită este un produs standard, o integrare, o automatizare, dezvoltare personalizată sau dacă există motive clare pentru a nu continua proiectul.
+        </p>
+        
+        <div class="sh-action">
+          <a href="/contact/" class="btn-sh-primary">Descrieți provocarea</a>
+          <div class="sh-reassurance">
+            <img src="/images/gabriel-antonio-pop.png" alt="Gabriel Pop" class="sh-avatar">
+            <span>Gabriel Pop conduce personal proiectul. Echipa noastră coordonează sarcinile funcționale și tehnice agreate.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Area -->
+      <div class="sh-visual">
+        <div class="decision-diagram">
+          <div class="node-root">Provocare operațională</div>
+          <div class="lines-split">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+              <path d="M50,0 C50,50 10,50 10,100" class="svg-line"></path>
+              <path d="M50,0 C50,50 50,50 50,100" class="svg-line"></path>
+              <path d="M50,0 C50,50 90,50 90,100" class="svg-line"></path>
+            </svg>
+          </div>
+          <div class="nodes-row">
+            <div class="node-branch">Produs Standard</div>
+            <div class="node-branch">Integrare</div>
+            <div class="node-branch node-custom">Dezvoltare Proprie</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-solutions-hero {
+    padding-top: calc(var(--header-height) + 5rem);
+    padding-bottom: 7rem;
+    background: var(--bg-page);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .sh-wrapper {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .sh-content {
+    max-width: 680px;
+  }
+
+  .sh-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.15;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+  }
+
+  .sh-lead {
+    font-size: 1.25rem;
+    color: var(--brand-navy);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .sh-body {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+  }
+
+  .sh-action {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .btn-sh-primary {
+    background: var(--brand-navy);
+    color: #ffffff;
+    padding: 1.1rem 2.5rem;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .btn-sh-primary:hover {
+    background: #0f1b30;
+    transform: translateY(-2px);
+  }
+
+  .sh-reassurance {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 450px;
+  }
+
+  .sh-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    flex-shrink: 0;
+  }
+
+  .sh-visual {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    padding: 4rem 2rem;
+    position: relative;
+  }
+  /* Subtle diagonal hash pattern for boutique look */
+  .sh-visual::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.3;
+    background-image: repeating-linear-gradient(45deg, var(--border-subtle) 0, var(--border-subtle) 1px, transparent 1px, transparent 10px);
+    pointer-events: none;
+  }
+
+  .decision-diagram {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .node-root {
+    background: var(--brand-navy);
+    color: #ffffff;
+    padding: 1rem 2rem;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: -10px; /* pull down to line */
+  }
+
+  .lines-split {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+  }
+  .lines-split svg {
+    width: 100%;
+    height: 100%;
+  }
+  .svg-line {
+    fill: none;
+    stroke: var(--brand-navy);
+    stroke-width: 1.5;
+    stroke-dasharray: 4 4;
+  }
+
+  .nodes-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -10px;
+  }
+
+  .node-branch {
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    color: var(--text-dark);
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-align: center;
+    flex: 1;
+    margin: 0 0.5rem;
+  }
+  .node-custom {
+    border-color: var(--brand-purple);
+    color: var(--brand-purple);
+    background: var(--brand-purple-soft);
+  }
+
+  @media (max-width: 960px) {
+    .sh-wrapper {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+  }
+  @media (max-width: 600px) {
+    .nodes-row { flex-direction: column; gap: 1rem; }
+    .lines-split { display: none; }
+    .node-root { margin-bottom: 1rem; }
+  }
+</style>

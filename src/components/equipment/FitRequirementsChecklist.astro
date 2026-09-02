@@ -1,0 +1,138 @@
+---
+---
+<section class="section-requirements" id="requirements">
+  <div class="container">
+    <div class="req-layout">
+      
+      <!-- Clipboard Header -->
+      <div class="req-header">
+        <span class="weroast-badge-pill" style="margin-bottom: 2rem; background: var(--bg-white); border: 1px solid var(--border-subtle); color: var(--text-muted); border-radius: 0;">
+          First, the use
+        </span>
+        <h2 class="req-title">
+          Alegerea corectă începe cu nevoia reală.
+        </h2>
+        <p class="req-desc">
+          Nu orice produs și nu orice variantă este potrivită pentru orice companie. De aceea, analizăm unde și cum vor fi utilizate.
+        </p>
+      </div>
+
+      <!-- Spec Checklist -->
+      <div class="req-checklist-area">
+        <div class="spec-clipboard">
+          <ul class="spec-list">
+            <li>
+              <span class="spec-num">01.</span>
+              <p>Cine va utiliza sau primi produsele?</p>
+            </li>
+            <li>
+              <span class="spec-num">02.</span>
+              <p>Pentru ce activitate sau ocazie sunt necesare?</p>
+            </li>
+            <li>
+              <span class="spec-num">03.</span>
+              <p>Ce cantitate, mărimi și variante sunt planificate?</p>
+            </li>
+            <li>
+              <span class="spec-num">04.</span>
+              <p>Ce cerințe există privind materialul, execuția sau rezistența?</p>
+            </li>
+            <li>
+              <span class="spec-num">05.</span>
+              <p>Ce identitate vizuală sau fișiere existente trebuie utilizate?</p>
+            </li>
+            <li>
+              <span class="spec-num">06.</span>
+              <p>Până când sunt necesare și ce buget este prevăzut?</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-requirements {
+    padding: 8rem 0;
+    background: #f8fafc;
+  }
+
+  .req-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+
+  .req-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 3.5vw, 3rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.15;
+    margin-bottom: 2rem;
+  }
+
+  .req-desc {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+
+  .req-checklist-area {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .spec-clipboard {
+    background: #ffffff;
+    border-left: 4px solid var(--brand-navy);
+    padding: 3rem 4rem;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+  }
+
+  .spec-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .spec-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .spec-num {
+    font-family: var(--font-mono, monospace);
+    font-size: 1rem;
+    color: var(--brand-purple);
+    font-weight: 700;
+    margin-top: 0.15rem;
+  }
+  .spec-list p {
+    font-size: 1.15rem;
+    color: var(--brand-navy);
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  @media (max-width: 960px) {
+    .req-layout {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+    .req-checklist-area {
+      justify-content: flex-start;
+    }
+    .spec-clipboard {
+      max-width: 100%;
+      padding: 2.5rem 1.5rem;
+    }
+  }
+</style>

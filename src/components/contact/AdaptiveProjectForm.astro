@@ -1,0 +1,550 @@
+---
+---
+<section class="section-adaptive-form" id="form">
+  <div class="container">
+    <div class="form-layout">
+      
+      <!-- Main Form Area -->
+      <div class="form-main">
+        <div class="form-header">
+          <span class="fh-eyebrow">Proiectul dumneavoastră</span>
+          <h2 class="fh-title">Trei pași scurți sunt suficienți pentru început.</h2>
+        </div>
+
+        <form id="project-form" class="project-form" novalidate>
+          
+          <!-- Step 1 -->
+          <fieldset class="form-step">
+            <legend class="step-title">1. Despre ce este vorba?</legend>
+            <p class="step-desc">Selectați domeniul care se potrivește cel mai bine nevoilor dumneavoastră. O pre-selecție de pe pagina anterioară poate fi modificată.</p>
+            
+            <div class="radio-grid">
+              <label class="radio-card">
+                <input type="radio" name="project" value="start" required>
+                <span class="card-content">Site nou / imagine corporativă</span>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="project" value="relaunch">
+                <span class="card-content">Relansare site / site existent</span>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="project" value="marketing">
+                <span class="card-content">Marketing și design</span>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="project" value="equipment">
+                <span class="card-content">Echipare pentru companii</span>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="project" value="individual">
+                <span class="card-content">Soluție digitală / automatizare</span>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="project" value="other">
+                <span class="card-content">Încă nu sunt sigur / Altele</span>
+              </label>
+            </div>
+            <div class="field-error" id="error-project">Selectați un tip de proiect.</div>
+          </fieldset>
+
+          <!-- Step 2 -->
+          <fieldset class="form-step">
+            <legend class="step-title">2. Cum vă putem contacta?</legend>
+            
+            <div class="input-grid">
+              <div class="form-group">
+                <label for="contact_name">Persoană de contact <span class="req">*</span></label>
+                <input type="text" id="contact_name" name="contact_name" class="form-input" required>
+                <div class="field-error" id="error-contact_name">Vă rugăm să introduceți un nume.</div>
+              </div>
+              
+              <div class="form-group">
+                <label for="contact_email">Adresă de e-mail <span class="req">*</span></label>
+                <input type="email" id="contact_email" name="contact_email" class="form-input" required>
+                <div class="field-error" id="error-contact_email">Vă rugăm să introduceți o adresă de e-mail validă.</div>
+              </div>
+              
+              <div class="form-group">
+                <label for="contact_phone">Număr de telefon</label>
+                <input type="tel" id="contact_phone" name="contact_phone" class="form-input">
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Step 3 -->
+          <fieldset class="form-step">
+            <legend class="step-title">3. Ce doriți să obțineți?</legend>
+            
+            <div class="form-group">
+              <label for="project_link">Site existent sau link relevant</label>
+              <input type="url" id="project_link" name="project_link" class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="project_desc">Descrieți pe scurt proiectul <span class="req">*</span></label>
+              <p class="field-help">Ce doriți să construiți, să îmbunătățiți sau să rezolvați? Ce există deja și ce ar trebui să se schimbe?</p>
+              <textarea id="project_desc" name="project_desc" class="form-input form-textarea" rows="4" required></textarea>
+              <div class="field-error" id="error-project_desc">Vă rugăm să oferiți o scurtă descriere.</div>
+            </div>
+            
+            <div class="input-grid-half">
+              <div class="form-group">
+                <label for="project_timeline">Start dorit sau interval de timp</label>
+                <input type="text" id="project_timeline" name="project_timeline" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="project_budget">Buget de investiții</label>
+                <input type="text" id="project_budget" name="project_budget" class="form-input">
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Submit Area -->
+          <div class="form-submit-area">
+            <p class="privacy-note">
+              Informații privind prelucrarea datelor se găsesc în politica noastră de confidențialitate. Trimiterea solicitării nu reprezintă o comandă și nu vă obligă la nimic.
+            </p>
+            <input type="hidden" name="source" id="form-source" value="contact_page">
+            
+            <button type="submit" class="btn-submit" id="submit-btn">
+              <span class="btn-text">Trimite solicitarea</span>
+              <span class="btn-loading">Se trimite...</span>
+            </button>
+            
+            <div class="system-message error-msg" id="form-error-msg" aria-hidden="true">
+              <strong>Solicitarea nu a putut fi trimisă.</strong><br/>
+              Vă rugăm să încercați din nou sau să scrieți direct la office@popdigital.at. Datele introduse au fost păstrate.
+            </div>
+            
+            <div class="system-message success-msg" id="form-success-msg" aria-hidden="true">
+              <strong>Mulțumim. Solicitarea a fost primită.</strong><br/>
+              Gabriel Pop va analiza personal proiectul și vă va contacta.
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Secondary Contact Sidebar -->
+      <aside class="form-sidebar">
+        <div class="direct-contact">
+          <h3 class="dc-title">Doriți mai degrabă să ne contactați direct?</h3>
+          <ul class="dc-list">
+            <li>
+              <strong>E-Mail:</strong><br/>
+              <a href="mailto:office@popdigital.at">office@popdigital.at</a>
+            </li>
+            <li>
+              <strong>Telefon:</strong><br/>
+              <a href="tel:+436705515177">+43 670 5515177</a>
+            </li>
+          </ul>
+          
+          <div class="dc-whatsapp">
+            <p>Pentru o scurtă întrebare organizatorică ne puteți scrie și pe WhatsApp. Vă rugăm să nu trimiteți parole, date de acces sau documente confidențiale.</p>
+            <a href="https://wa.me/436705515177" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+              Scurtă întrebare pe WhatsApp
+            </a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-adaptive-form {
+    padding: 6rem 0;
+    background: #ffffff;
+  }
+
+  .form-layout {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 6rem;
+    align-items: start;
+  }
+
+  /* Header */
+  .form-header {
+    margin-bottom: 4rem;
+  }
+  .fh-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+  .fh-title {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--brand-navy);
+  }
+
+  /* Form Steps */
+  .project-form {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .form-step {
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid var(--border-light);
+    padding-top: 3rem;
+  }
+  .form-step:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .step-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--brand-navy);
+    margin-bottom: 1rem;
+    display: table;
+  }
+  .step-desc {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+  }
+
+  /* Radio Grid */
+  .radio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .radio-card {
+    cursor: pointer;
+    position: relative;
+  }
+  .radio-card input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .card-content {
+    display: block;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--border-light);
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  .radio-card input:checked + .card-content {
+    border-color: var(--brand-navy);
+    background: #f8fafc;
+    color: var(--brand-navy);
+    font-weight: 700;
+  }
+  .radio-card input:focus-visible + .card-content {
+    outline: 2px solid var(--brand-purple);
+    outline-offset: 2px;
+  }
+
+  /* Input Fields */
+  .input-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .input-grid-half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .form-group label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--brand-navy);
+  }
+  .form-group .req {
+    color: #ef4444;
+  }
+  .field-help {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .form-input {
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border-light);
+    background: #ffffff;
+    font-size: 1rem;
+    color: var(--text-dark);
+    font-family: var(--font-sans);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    border-radius: 0; /* strict editorial square borders */
+  }
+  .form-input:focus {
+    outline: none;
+    border-color: var(--brand-navy);
+    box-shadow: 0 0 0 1px var(--brand-navy);
+  }
+  .form-textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  /* Validation & States */
+  .field-error {
+    display: none;
+    font-size: 0.85rem;
+    color: #ef4444;
+    margin-top: 0.25rem;
+  }
+  .has-error .form-input,
+  .has-error .card-content {
+    border-color: #ef4444;
+  }
+  .has-error .field-error {
+    display: block;
+  }
+
+  .form-submit-area {
+    border-top: 1px solid var(--border-light);
+    padding-top: 3rem;
+  }
+
+  .privacy-note {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  .btn-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 2.5rem;
+    background: var(--brand-navy);
+    color: #ffffff;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .btn-submit:hover {
+    background: #0f1b30;
+  }
+  .btn-loading {
+    display: none;
+  }
+  
+  .project-form.is-submitting .btn-submit {
+    background: var(--text-muted);
+    cursor: not-allowed;
+  }
+  .project-form.is-submitting .btn-text { display: none; }
+  .project-form.is-submitting .btn-loading { display: inline; }
+
+  .system-message {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-left: 3px solid;
+    display: none;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+  .system-message[aria-hidden="false"] {
+    display: block;
+  }
+  .system-message strong {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+  }
+  
+  .error-msg {
+    background: #fef2f2;
+    border-color: #ef4444;
+    color: #991b1b;
+  }
+  .success-msg {
+    background: #f0fdf4;
+    border-color: #22c55e;
+    color: #166534;
+  }
+
+  /* Sidebar Direct Contact */
+  .form-sidebar {
+    background: #f8fafc;
+    padding: 3rem 2.5rem;
+  }
+
+  .dc-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--brand-navy);
+    margin-bottom: 2rem;
+    line-height: 1.3;
+  }
+
+  .dc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .dc-list strong {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .dc-list a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--brand-navy);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .dc-list a:hover {
+    color: var(--brand-purple);
+  }
+
+  .dc-whatsapp p {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-whatsapp {
+    display: inline-flex;
+    padding: 1rem 1.5rem;
+    background: #25D366; /* Standard WhatsApp Green, allowed for branding */
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  .btn-whatsapp:hover {
+    background: #1ebc5a;
+  }
+
+  @media (max-width: 900px) {
+    .form-layout {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+    .radio-grid {
+      grid-template-columns: 1fr;
+    }
+    .input-grid-half {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  (() => {
+    const form = document.getElementById('project-form');
+    if (!form) return;
+
+    // Handle query params pre-fill (e.g. ?project=start&source=home)
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectParam = urlParams.get('project');
+    const sourceParam = urlParams.get('source');
+
+    if (projectParam) {
+      const radio = form.querySelector(`input[name="project"][value="${projectParam}"]`);
+      if (radio) radio.checked = true;
+    }
+    if (sourceParam) {
+      const sourceInput = document.getElementById('form-source');
+      if (sourceInput) sourceInput.value = sourceParam;
+    }
+
+    // Validation
+    const validateField = (field) => {
+      let isValid = true;
+      if (field.type === 'radio') {
+        const radios = form.querySelectorAll(`input[name="${field.name}"]`);
+        isValid = Array.from(radios).some(r => r.checked);
+        const container = radios[0].closest('.form-step');
+        if (!isValid) container.classList.add('has-error');
+        else container.classList.remove('has-error');
+      } else {
+        isValid = field.checkValidity();
+        const container = field.closest('.form-group');
+        if (!isValid) container.classList.add('has-error');
+        else container.classList.remove('has-error');
+      }
+      return isValid;
+    };
+
+    // Remove error on input
+    form.addEventListener('input', (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+        validateField(e.target);
+      }
+    });
+
+    // Form submission
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const reqFields = form.querySelectorAll('input[required], textarea[required]');
+      let formValid = true;
+      
+      reqFields.forEach(field => {
+        if (!validateField(field)) formValid = false;
+      });
+
+      if (!formValid) {
+        // Focus first invalid field
+        const firstInvalid = form.querySelector('.has-error input, .has-error textarea');
+        if (firstInvalid) firstInvalid.focus();
+        return;
+      }
+
+      // Valid! Simulate sending state
+      form.classList.add('is-submitting');
+      document.getElementById('form-error-msg').setAttribute('aria-hidden', 'true');
+      document.getElementById('form-success-msg').setAttribute('aria-hidden', 'true');
+
+      // Simulate network request
+      setTimeout(() => {
+        form.classList.remove('is-submitting');
+        
+        // Simulating success (can be modified to simulate error)
+        const isSuccess = true;
+        
+        if (isSuccess) {
+          document.getElementById('form-success-msg').setAttribute('aria-hidden', 'false');
+          // Hide submit button to prevent double sending
+          document.getElementById('submit-btn').style.display = 'none';
+        } else {
+          document.getElementById('form-error-msg').setAttribute('aria-hidden', 'false');
+        }
+      }, 1500);
+    });
+  })();
+</script>

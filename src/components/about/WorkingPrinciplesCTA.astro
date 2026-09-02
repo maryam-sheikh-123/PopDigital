@@ -1,0 +1,225 @@
+---
+---
+<section class="section-principles-cta" id="principles">
+  <div class="container">
+    
+    <!-- Principles Grid -->
+    <div class="wp-top">
+      <div class="wp-header">
+        <span class="weroast-badge-pill" style="margin-bottom: 1.5rem; background: var(--bg-white); border: 1px solid var(--border-light); color: var(--text-muted); border-radius: 0;">
+          Standardul nostru
+        </span>
+        <h2 class="wp-main-title">
+          Mai întâi claritate. Apoi amploare.
+        </h2>
+      </div>
+      
+      <div class="wp-grid">
+        <div class="wp-item">
+          <h3 class="wp-title">Ușor de înțeles</h3>
+          <p class="wp-desc">Primiți recomandări clare și știți ce este inclus în proiect.</p>
+        </div>
+        <div class="wp-item">
+          <h3 class="wp-title">Conform nevoilor</h3>
+          <p class="wp-desc">Nu propunem automat cea mai cuprinzătoare soluție, ci următorul nivel potrivit.</p>
+        </div>
+        <div class="wp-item">
+          <h3 class="wp-title">Conducere personală</h3>
+          <p class="wp-desc">Gabriel Pop rămâne persoana centrală de contact și urmărește obiectivele, responsabilitățile și deciziile.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final CTA Wrapper -->
+    <div class="wp-bottom">
+      <div class="cta-wrapper">
+        <div class="cta-content">
+          <h2 class="cta-title">La ce lucrați în prezent?</h2>
+          <p class="cta-desc">
+            Pentru primul pas nu aveți nevoie de un concept finalizat. Descrieți situația actuală și ce doriți să obțineți.
+          </p>
+        </div>
+        
+        <div class="cta-action">
+          <a href="/contact/" class="cta-btn">
+            Discutați proiectul cu Gabriel
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          
+          <div class="cta-reassurance">
+            <img src="/images/gabriel-antonio-pop.png" alt="Gabriel Pop" class="cta-avatar">
+            <span>Gabriel Pop vă va răspunde personal.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .section-principles-cta {
+    background: #ffffff;
+    padding-top: 8rem;
+  }
+
+  /* Top: Principles */
+  .wp-top {
+    margin-bottom: 8rem;
+  }
+
+  .wp-header {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .wp-main-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.15;
+  }
+
+  .wp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-top: 1px solid var(--border-light);
+    padding-top: 4rem;
+  }
+
+  .wp-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wp-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--brand-navy);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  .wp-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background: var(--brand-purple);
+  }
+
+  .wp-desc {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Bottom: CTA */
+  .wp-bottom {
+    background: var(--brand-navy);
+    padding: 6rem 0;
+    margin: 0 calc(-50vw + 50%); /* Full bleed background */
+  }
+
+  .cta-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--container-px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .cta-content {
+    max-width: 500px;
+  }
+
+  .cta-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 3.5vw, 2.8rem);
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-desc {
+    font-size: 1.15rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+  }
+
+  .cta-action {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem;
+    background: #ffffff;
+    color: var(--brand-navy);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+  .cta-btn svg {
+    width: 24px;
+    height: 24px;
+    margin-left: 1.5rem;
+    transition: transform 0.3s;
+  }
+  .cta-btn:hover svg {
+    transform: translateX(6px);
+  }
+
+  .cta-reassurance {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #94a3b8;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  .cta-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    object-fit: cover;
+    filter: grayscale(100%);
+  }
+
+  @media (max-width: 900px) {
+    .wp-grid {
+      grid-template-columns: 1fr;
+      padding-top: 2rem;
+    }
+    .cta-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

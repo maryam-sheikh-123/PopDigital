@@ -1,0 +1,148 @@
+---
+---
+<section class="section-diagnostic" id="diagnostic">
+  <div class="container">
+    <div class="diag-wrapper">
+      
+      <div class="diag-left">
+        <span class="weroast-badge-pill" style="margin-bottom: 1.5rem; background: transparent; border-color: var(--border-subtle); color: var(--text-muted); border-radius: 0;">
+          First, the objective
+        </span>
+        <h2 class="diag-title">
+          Ce trebuie să realizeze prezența companiei dumneavoastră?
+        </h2>
+        <p class="diag-desc">
+          Înainte de a crea materiale sau de a alege canale, clarificăm ce anume trebuie schimbat mai exact.
+        </p>
+        <p class="diag-footer">
+          Astfel stabilim o direcție comună înainte ca timpul și bugetul să fie investite în măsuri individuale.
+        </p>
+      </div>
+
+      <div class="diag-right">
+        <div class="questionnaire">
+          <div class="q-item">
+            <span class="q-num">01</span>
+            <p class="q-text">Ce trebuie să înțeleagă clienții despre companie?</p>
+          </div>
+          <div class="q-item">
+            <span class="q-num">02</span>
+            <p class="q-text">Ce serviciu sau ofertă ar trebui să fie în prim plan?</p>
+          </div>
+          <div class="q-item">
+            <span class="q-num">03</span>
+            <p class="q-text">Cui vă adresați și ce acțiune ar trebui să urmeze?</p>
+          </div>
+          <div class="q-item">
+            <span class="q-num">04</span>
+            <p class="q-text">Ce există deja și merită păstrat?</p>
+          </div>
+          <div class="q-item">
+            <span class="q-num">05</span>
+            <p class="q-text">Unde este prezența actuală neclară sau inconsecventă?</p>
+          </div>
+          <div class="q-item">
+            <span class="q-num">06</span>
+            <p class="q-text">Cum poate fi evaluată utilitatea măsurii?</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-diagnostic {
+    padding: 8rem 0;
+    background: var(--bg-page);
+  }
+
+  .diag-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 6rem;
+    align-items: start;
+  }
+
+  .diag-left {
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+  }
+
+  .diag-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 2.6rem);
+    font-weight: 400;
+    color: var(--brand-navy);
+    line-height: 1.15;
+    margin-bottom: 2rem;
+  }
+
+  .diag-desc {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+  }
+
+  .diag-footer {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-style: italic;
+    padding-left: 1rem;
+    border-left: 2px solid var(--border-light);
+  }
+
+  .questionnaire {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--text-dark);
+  }
+
+  .q-item {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-light);
+    transition: background 0.3s ease;
+  }
+  .q-item:hover {
+    background: #ffffff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .q-num {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+  }
+
+  .q-text {
+    font-size: 1.35rem;
+    color: var(--brand-navy);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 900px) {
+    .diag-wrapper {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+    .diag-left {
+      position: static;
+    }
+    .q-item {
+      padding: 1.5rem 0;
+    }
+    .q-text {
+      font-size: 1.15rem;
+    }
+  }
+</style>

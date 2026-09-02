@@ -1,0 +1,193 @@
+---
+---
+<section class="section-final-solutions" id="inquiry">
+  <div class="container">
+    <div class="fs-wrapper">
+      
+      <div class="fs-header">
+        <span class="fs-eyebrow">Provocarea dumneavoastră</span>
+        <h2 class="fs-title">
+          Ce proces consumă astăzi timp inutil sau vă îngreunează munca?
+        </h2>
+        <p class="fs-desc">
+          Descrieți procesul actual, persoanele sau sistemele implicate și ce doriți să îmbunătățiți. Nu aveți nevoie de un concept tehnic gata pregătit.
+        </p>
+      </div>
+      
+      <div class="fs-action-area">
+        <div class="intake-visual">
+          <div class="intake-line"></div>
+          <div class="intake-line"></div>
+          <div class="intake-line short"></div>
+        </div>
+        
+        <div class="fs-cta-group">
+          <a href="/contact/" class="fs-cta-btn">
+            Descrieți provocarea
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          
+          <div class="fs-reassurance">
+            <img src="/images/gabriel-antonio-pop.png" alt="Gabriel Pop" class="fs-avatar">
+            <span>Gabriel Pop vă va răspunde personal.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-final-solutions {
+    padding: 8rem 0 10rem;
+    background: var(--bg-page);
+  }
+
+  .fs-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    padding: 6rem 5rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+    position: relative;
+    overflow: hidden;
+  }
+  /* Decorative corner accent */
+  .fs-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 60px; height: 60px;
+    background: var(--brand-purple-soft);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+  }
+
+  .fs-header {
+    text-align: left;
+    margin-bottom: 4rem;
+  }
+
+  .fs-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--brand-purple);
+    margin-bottom: 1.5rem;
+  }
+
+  .fs-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    color: var(--brand-navy);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .fs-desc {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    max-width: 650px;
+  }
+
+  .fs-action-area {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* Stylized text area prompt */
+  .intake-visual {
+    background: #f8fafc;
+    border: 1px dashed var(--border-subtle);
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: text;
+  }
+  .intake-line {
+    height: 12px;
+    background: #e2e8f0;
+    width: 100%;
+    border-radius: 2px;
+  }
+  .intake-line.short {
+    width: 60%;
+  }
+
+  .fs-cta-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .fs-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--brand-navy);
+    color: #ffffff;
+    padding: 1.25rem 2.5rem;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, background 0.2s;
+  }
+  .fs-cta-btn:hover {
+    background: #0f1b30;
+    transform: translateY(-2px);
+  }
+  .fs-cta-btn svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s;
+  }
+  .fs-cta-btn:hover svg {
+    transform: translateX(4px);
+  }
+
+  .fs-reassurance {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-dim);
+    font-size: 1rem;
+    font-style: italic;
+  }
+  .fs-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+  }
+
+  @media (max-width: 768px) {
+    .fs-wrapper {
+      padding: 4rem 2rem;
+    }
+    .fs-cta-group {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .fs-cta-btn {
+      justify-content: center;
+    }
+    .fs-reassurance {
+      justify-content: center;
+    }
+  }
+</style>

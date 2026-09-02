@@ -1,0 +1,154 @@
+---
+---
+<section class="section-usable-version" id="v1">
+  <div class="container">
+    <div class="uv-frame">
+      
+      <div class="uv-header">
+        <span class="uv-eyebrow">Un început bine delimitat</span>
+        <h2 class="uv-title">Prima versiune rezolvă mai întâi partea cea mai importantă.</h2>
+        <p class="uv-desc">
+          Nu orice funcție este necesară de la început. O primă versiune clar delimitată poate susține procesul central și crea o bază pentru extinderi ulterioare.
+        </p>
+      </div>
+      
+      <div class="uv-content">
+        <ul class="uv-list">
+          <li>
+            <svg class="uv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>procesul central susținut mai întâi;</span>
+          </li>
+          <li>
+            <svg class="uv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>funcțiile necesare pentru utilizare;</span>
+          </li>
+          <li class="excluded">
+            <svg class="uv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+            <span>ce nu face intenționat parte din prima versiune;</span>
+          </li>
+          <li>
+            <svg class="uv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>criteriile de verificare a soluției;</span>
+          </li>
+          <li>
+            <svg class="uv-icon text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4">
+              <line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <span class="text-muted">extinderile posibile ulterior.</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-usable-version {
+    padding: 6rem 0;
+    background: #f8fafc;
+  }
+
+  .uv-frame {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid var(--brand-navy);
+    padding: 5rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Target brackets effect at corners */
+  .uv-frame::before, .uv-frame::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--brand-navy);
+  }
+  .uv-frame::before {
+    top: -6px; left: -6px;
+    border-right: none; border-bottom: none;
+  }
+  .uv-frame::after {
+    bottom: -6px; right: -6px;
+    border-left: none; border-top: none;
+  }
+
+  .uv-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+  }
+
+  .uv-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .uv-desc {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 4rem;
+  }
+
+  .uv-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .uv-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: var(--brand-navy);
+  }
+  
+  .uv-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--brand-purple);
+  }
+
+  .excluded { color: var(--text-muted) !important; text-decoration: line-through; }
+  .excluded .uv-icon { color: var(--border-subtle); }
+
+  .text-muted { color: var(--text-muted); }
+
+  @media (max-width: 768px) {
+    .uv-frame {
+      padding: 3rem 1.5rem;
+    }
+    .uv-list li {
+      text-align: left;
+      align-items: flex-start;
+    }
+    .uv-icon {
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+  }
+</style>

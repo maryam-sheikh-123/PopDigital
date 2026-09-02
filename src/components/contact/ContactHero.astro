@@ -1,0 +1,145 @@
+---
+---
+<section class="section-contact-hero" id="hero">
+  <div class="container">
+    <div class="ch-wrapper">
+      
+      <div class="ch-content">
+        <span class="ch-eyebrow">Solicită un proiect</span>
+        
+        <h1 class="ch-title">Spuneți-ne ce planificați.</h1>
+        
+        <div class="ch-narrative">
+          <p class="ch-text">
+            Nu aveți nevoie de un concept complet dezvoltat sau de un brief detaliat. Pentru început, câteva detalii despre compania dumneavoastră, situația actuală și obiectivul dumneavoastră sunt suficiente.
+          </p>
+          <p class="ch-text strong">
+            Gabriel Pop va analiza personal solicitarea și vă va răspunde direct.
+          </p>
+        </div>
+      </div>
+      
+      <div class="ch-indicator">
+        <a href="#form" class="ch-scroll-link">
+          <span class="scroll-text">Descrieți proiectul</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <polyline points="19 12 12 19 5 12"></polyline>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-contact-hero {
+    padding-top: calc(var(--header-height) + 6rem);
+    padding-bottom: 6rem;
+    background: #f8fafc;
+  }
+
+  .ch-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ch-content {
+    margin-bottom: 4rem;
+  }
+
+  .ch-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--brand-purple);
+    margin-bottom: 2rem;
+  }
+
+  .ch-title {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 3rem;
+  }
+
+  .ch-narrative {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-left: 2px solid var(--brand-navy);
+    padding-left: 2.5rem;
+  }
+
+  .ch-text {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+  }
+  .ch-text.strong {
+    font-weight: 600;
+    color: var(--brand-navy);
+  }
+
+  .ch-indicator {
+    padding-left: 2.5rem;
+  }
+
+  .ch-scroll-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--brand-navy);
+    transition: color 0.3s;
+  }
+  .ch-scroll-link:hover {
+    color: var(--brand-purple);
+  }
+
+  .scroll-text {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .ch-scroll-link svg {
+    width: 24px;
+    height: 24px;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-8px);
+    }
+    60% {
+      transform: translateY(-4px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ch-narrative {
+      padding-left: 1.5rem;
+    }
+    .ch-indicator {
+      padding-left: 1.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,116 @@
+---
+---
+<section class="section-portfolio-hero" id="hero">
+  <div class="container">
+    <div class="ph-wrapper">
+      
+      <!-- Eyebrow -->
+      <div class="ph-eyebrow-container">
+        <span class="ph-eyebrow">Portofoliu</span>
+      </div>
+      
+      <!-- Split Typographical Layout -->
+      <div class="ph-grid">
+        <div class="ph-title-col">
+          <h1 class="ph-title">Un proiect care arată cum lucrăm.</h1>
+        </div>
+        
+        <div class="ph-desc-col">
+          <div class="ph-divider"></div>
+          <p class="ph-lead">
+            Prezentăm situația inițială, rolul nostru concret și deciziile care au condus la implementare.
+          </p>
+          <p class="ph-body">
+            Pentru început, prezentăm un proiect pentru care ne asumăm responsabilitatea directă: noua prezență online a Pop Digital Solutions.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-portfolio-hero {
+    padding-top: calc(var(--header-height) + 6rem);
+    padding-bottom: 8rem;
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .ph-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .ph-eyebrow-container {
+    margin-bottom: 4rem;
+  }
+  .ph-eyebrow {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+  }
+
+  .ph-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 6rem;
+    align-items: start;
+  }
+
+  .ph-title {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 5vw, 4.2rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  .ph-desc-col {
+    position: relative;
+    padding-left: 3rem;
+  }
+  /* The fine 1px vertical border separating the columns */
+  .ph-divider {
+    position: absolute;
+    top: 10px;
+    bottom: -20px;
+    left: 0;
+    width: 1px;
+    background: var(--brand-navy);
+  }
+
+  .ph-lead {
+    font-size: 1.35rem;
+    color: var(--brand-navy);
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
+
+  .ph-body {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media (max-width: 900px) {
+    .ph-grid {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+    .ph-desc-col {
+      padding-left: 1.5rem;
+    }
+    .ph-divider {
+      top: 0;
+      bottom: 0;
+    }
+  }
+</style>

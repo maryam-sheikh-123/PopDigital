@@ -1,0 +1,145 @@
+---
+---
+<section class="section-final-portfolio" id="inquiry">
+  <div class="container">
+    <div class="fpi-wrapper">
+      
+      <div class="fpi-content">
+        <span class="fpi-eyebrow">Proiectul dumneavoastră</span>
+        <h2 class="fpi-title">
+          Ce ar trebui să realizeze prezența companiei dumneavoastră?
+        </h2>
+        <p class="fpi-desc">
+          Indiferent dacă planificați un nou website, o relansare sau o prezență mai largă, spuneți-ne unde vă aflați și ce doriți să obțineți. Gabriel Pop va analiza personal situația.
+        </p>
+      </div>
+      
+      <!-- Split Actions with Sharp Structural Lines -->
+      <div class="fpi-actions">
+        
+        <div class="action-route">
+          <span class="action-num">01.</span>
+          <a href="/contact/" class="action-link">
+            Discutați un proiect similar
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="action-route">
+          <span class="action-num">02.</span>
+          <a href="/#solutions" class="action-link">
+            Vedeți soluțiile
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-final-portfolio {
+    padding: 8rem 0;
+    background: #ffffff;
+  }
+
+  .fpi-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .fpi-content {
+    margin-bottom: 5rem;
+  }
+
+  .fpi-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--brand-purple);
+    margin-bottom: 1.5rem;
+  }
+
+  .fpi-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 4vw, 3.2rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.15;
+    margin-bottom: 2rem;
+  }
+
+  .fpi-desc {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    max-width: 700px;
+  }
+
+  .fpi-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    border-top: 2px solid var(--brand-navy);
+    padding-top: 3rem;
+  }
+
+  .action-route {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .action-num {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+
+  .action-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--brand-navy);
+    text-decoration: none;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-light);
+    transition: border-color 0.3s, color 0.3s;
+  }
+  
+  .action-link:hover {
+    color: var(--brand-purple);
+    border-color: var(--brand-purple);
+  }
+
+  .action-link svg {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+  }
+  .action-link:hover svg {
+    transform: translateX(6px);
+  }
+
+  @media (max-width: 768px) {
+    .fpi-actions {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+</style>

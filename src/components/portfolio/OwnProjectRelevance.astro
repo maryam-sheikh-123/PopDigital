@@ -1,0 +1,143 @@
+---
+---
+<section class="section-own-relevance" id="relevance">
+  <div class="container">
+    <div class="or-wrapper">
+      
+      <!-- Architectural Grid Line -->
+      <div class="or-grid-line"></div>
+      
+      <div class="or-content-grid">
+        <div class="or-header">
+          <span class="or-eyebrow">De ce prezentăm acest proiect?</span>
+          <h2 class="or-title">
+            Propriul website este o provocare antreprenorială reală.
+          </h2>
+        </div>
+        
+        <div class="or-thesis">
+          <div class="thesis-block">
+            <span class="thesis-marker">I.</span>
+            <p class="thesis-text">
+              Website-ul trebuie să explice ce reprezintă Pop Digital Solutions, care servicii se completează reciproc și pentru ce companii putem fi alegerea potrivită.
+            </p>
+          </div>
+          
+          <div class="thesis-block">
+            <span class="thesis-marker">II.</span>
+            <p class="thesis-text">
+              În același timp, trebuie să inspire încredere și să se bazeze constant pe fapte verificabile despre roluri, rezultate și profilul companiei. Această combinație de strategie, claritate și comunicare credibilă face ca proiectul să fie relevant pentru portofoliu.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-own-relevance {
+    padding: 10rem 0;
+    background: #111827; /* Deep Charcoal */
+    color: #f3f4f6;
+  }
+
+  .or-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 2rem;
+  }
+
+  /* Architectural vertical line */
+  .or-grid-line {
+    position: absolute;
+    top: -4rem;
+    bottom: -4rem;
+    left: 0;
+    width: 1px;
+    background: #374151;
+  }
+
+  .or-content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .or-header {
+    max-width: 700px;
+  }
+
+  .or-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #9ca3af;
+    margin-bottom: 2rem;
+  }
+
+  .or-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 300;
+    line-height: 1.2;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+  }
+
+  .or-thesis {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-left: 4rem; /* Offset indented structure */
+    border-left: 1px dashed #4b5563;
+  }
+
+  .thesis-block {
+    position: relative;
+    max-width: 600px;
+  }
+
+  .thesis-marker {
+    position: absolute;
+    left: -4rem;
+    top: 0;
+    width: 4rem;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #3b82f6;
+  }
+
+  .thesis-text {
+    font-size: 1.2rem;
+    color: #d1d5db;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  @media (max-width: 768px) {
+    .or-wrapper {
+      padding-left: 0;
+    }
+    .or-grid-line {
+      display: none;
+    }
+    .or-thesis {
+      padding-left: 0;
+      border-left: none;
+    }
+    .thesis-marker {
+      position: static;
+      display: block;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+  }
+</style>

@@ -1,0 +1,181 @@
+---
+---
+<section class="section-final-equipment" id="inquiry">
+  <div class="container">
+    <div class="fe-wrapper">
+      
+      <div class="fe-header">
+        <span class="weroast-badge-pill" style="margin-bottom: 2rem; background: transparent; border-color: var(--text-dark); color: var(--brand-navy); border-radius: 0;">
+          Cererea dumneavoastră
+        </span>
+        <h2 class="fe-title">
+          De ce produse aveți nevoie și cum vor fi utilizate?
+        </h2>
+        <p class="fe-desc">
+          Vă rugăm să ne comunicați categoria, cantitatea aproximativă, domeniul de utilizare și termenul limită. Dacă aveți un logo sau fișiere grafice, puteți menționa și acest lucru.
+        </p>
+      </div>
+
+      <!-- Typographic Variable Grid -->
+      <div class="fe-variables">
+        <div class="var-item">
+          <span class="var-label">01. Categorie</span>
+          <span class="var-line"></span>
+        </div>
+        <div class="var-item">
+          <span class="var-label">02. Cantitate</span>
+          <span class="var-line"></span>
+        </div>
+        <div class="var-item">
+          <span class="var-label">03. Utilizare</span>
+          <span class="var-line"></span>
+        </div>
+        <div class="var-item">
+          <span class="var-label">04. Termen</span>
+          <span class="var-line"></span>
+        </div>
+      </div>
+      
+      <div class="fe-action-wrapper">
+        <a href="/contact/" class="fe-cta">
+          Discutați echiparea companiei
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="fe-reassurance">
+        <img src="/images/gabriel-antonio-pop.png" alt="Gabriel Pop" class="fe-avatar">
+        <span>Gabriel Pop vă va răspunde personal.</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-final-equipment {
+    padding: 8rem 0 10rem;
+    background: #ffffff;
+  }
+
+  .fe-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fe-header {
+    margin-bottom: 4rem;
+  }
+
+  .fe-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+  }
+
+  .fe-desc {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    max-width: 700px;
+  }
+
+  .fe-variables {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 4rem;
+    margin-bottom: 5rem;
+  }
+
+  .var-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .var-label {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .var-line {
+    width: 100%;
+    height: 1px;
+    background: var(--text-dark);
+  }
+
+  .fe-action-wrapper {
+    width: 100%;
+    border-top: 1px solid var(--border-light);
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .fe-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 600;
+    color: var(--brand-navy);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .fe-cta:hover {
+    color: var(--brand-purple);
+  }
+  .fe-cta svg {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .fe-cta:hover svg {
+    transform: translateX(12px);
+  }
+
+  .fe-reassurance {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-dim);
+    font-size: 1.05rem;
+    font-style: italic;
+  }
+
+  .fe-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 0;
+    object-fit: cover;
+    object-position: center 15%;
+    filter: grayscale(100%);
+  }
+
+  @media (max-width: 768px) {
+    .fe-variables {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .fe-cta svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+</style>

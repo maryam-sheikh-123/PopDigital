@@ -1,0 +1,126 @@
+---
+---
+<section class="section-final-marketing" id="inquiry">
+  <div class="container">
+    <div class="fm-wrapper">
+      
+      <span class="weroast-badge-pill" style="margin-bottom: 2rem; background: transparent; border-color: var(--text-dark); color: var(--brand-navy); border-radius: 0;">
+        Next step
+      </span>
+      
+      <h2 class="fm-title">
+        Ce trebuie să comunice compania dumneavoastră mai clar sau să obțină mai bine?
+      </h2>
+      
+      <p class="fm-desc">
+        Descrieți situația actuală, ce există deja și ce doriți să schimbați. Gabriel Pop va analiza personal cererea.
+      </p>
+      
+      <div class="fm-action-wrapper">
+        <a href="/contact/" class="fm-cta">
+          Discutați proiectul de marketing
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="fm-reassurance">
+        <img src="/images/gabriel-antonio-pop.png" alt="Gabriel Pop" class="fm-avatar">
+        <span>Gabriel Pop vă va răspunde personal.</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-final-marketing {
+    padding: 8rem 0 10rem;
+    background: #ffffff;
+  }
+
+  .fm-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fm-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    letter-spacing: -0.03em;
+  }
+
+  .fm-desc {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    max-width: 700px;
+    margin-bottom: 4rem;
+  }
+
+  .fm-action-wrapper {
+    width: 100%;
+    border-top: 2px solid var(--brand-navy);
+    padding-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .fm-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 600;
+    color: var(--brand-navy);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .fm-cta:hover {
+    color: var(--brand-purple);
+  }
+  .fm-cta svg {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .fm-cta:hover svg {
+    transform: translateX(12px);
+  }
+
+  .fm-reassurance {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    font-style: italic;
+  }
+
+  .fm-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 15%;
+    filter: grayscale(100%);
+  }
+
+  @media (max-width: 768px) {
+    .fm-cta svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+</style>

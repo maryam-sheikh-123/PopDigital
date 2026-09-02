@@ -1,0 +1,158 @@
+---
+---
+<section class="section-brand-pillars" id="brand-pillars">
+  <div class="container">
+    <div class="bp-header">
+      <span class="weroast-badge-pill" style="margin-bottom: 1.5rem; background: var(--bg-white); border-radius: 0; color: var(--text-muted); border: 1px solid var(--border-light);">
+        O bază clară
+      </span>
+      <h2 class="bp-title">
+        Un brand puternic oferă direcție fiecărui punct de contact.
+      </h2>
+      <p class="bp-desc">
+        O identitate profesională ajută compania să fie recunoscută și înțeleasă. Pentru aceasta, mesajele, limbajul și designul trebuie să funcționeze împreună.
+      </p>
+    </div>
+
+    <div class="bp-filmstrip">
+      
+      <div class="bp-pillar">
+        <div class="bp-num">/01</div>
+        <h3 class="bp-pillar-title">Poziționare și mesaj</h3>
+        <p class="bp-pillar-text">
+          Structurăm ideile centrale, prioritățile și profilul companiei.
+        </p>
+      </div>
+
+      <div class="bp-pillar">
+        <div class="bp-num">/02</div>
+        <h3 class="bp-pillar-title">Identitate vizuală</h3>
+        <p class="bp-pillar-text">
+          Logo, culori, tipografie, stilul imaginilor și principii de design – noi sau dezvoltate din baza existentă.
+        </p>
+      </div>
+
+      <div class="bp-pillar">
+        <div class="bp-num">/03</div>
+        <h3 class="bp-pillar-title">Sistem de aplicare</h3>
+        <p class="bp-pillar-text">
+          Elemente reutilizabile și reguli clare pentru formate digitale și tipărite.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="bp-footer">
+      <p>
+        Nu orice proiect necesită reconstruirea completă a brandului. Clarificăm ce funcționează și unde o dezvoltare țintită aduce cea mai mare valoare.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-brand-pillars {
+    padding: 8rem 0;
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .bp-header {
+    max-width: 800px;
+    margin-bottom: 5rem;
+  }
+
+  .bp-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .bp-desc {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    max-width: 650px;
+  }
+
+  .bp-filmstrip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .bp-pillar {
+    padding: 3rem 2.5rem 4rem 0;
+    border-right: 1px solid var(--border-light);
+    display: flex;
+    flex-direction: column;
+  }
+  .bp-pillar:first-child {
+    padding-left: 0;
+  }
+  .bp-pillar:last-child {
+    border-right: none;
+    padding-right: 0;
+    padding-left: 2.5rem;
+  }
+  .bp-pillar:nth-child(2) {
+    padding-left: 2.5rem;
+  }
+
+  .bp-num {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    color: var(--brand-purple);
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+  }
+
+  .bp-pillar-title {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--brand-navy);
+    margin-bottom: 1rem;
+  }
+
+  .bp-pillar-text {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .bp-footer {
+    margin-top: 4rem;
+    max-width: 700px;
+    font-size: 1.05rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  @media (max-width: 900px) {
+    .bp-filmstrip {
+      grid-template-columns: 1fr;
+      border-bottom: none;
+    }
+    .bp-pillar {
+      padding: 3rem 0;
+      border-right: none;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .bp-pillar:first-child,
+    .bp-pillar:nth-child(2),
+    .bp-pillar:last-child {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .bp-pillar:last-child {
+      border-bottom: 1px solid var(--border-light);
+    }
+  }
+</style>

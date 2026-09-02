@@ -1,0 +1,30 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+
+import AboutHero from '../../../components/about/AboutHero.astro';
+import VerifiedProfessionalPath from '../../../components/about/VerifiedProfessionalPath.astro';
+import CompanyPurpose from '../../../components/about/CompanyPurpose.astro';
+import ConnectedBusinessAreas from '../../../components/about/ConnectedBusinessAreas.astro';
+import TeamCollaborationMap from '../../../components/about/TeamCollaborationMap.astro';
+import WorkingPrinciplesCTA from '../../../components/about/WorkingPrinciplesCTA.astro';
+---
+
+<Layout 
+  title="Despre noi | Pop Digital Solutions EU" 
+  description="Aflați cine este Gabriel Antonio Pop și cum conduce proiectele de soluții digitale, marketing, design și echipare pentru companii.">
+  
+  <Header />
+
+  <main>
+    <AboutHero />
+    <VerifiedProfessionalPath />
+    <CompanyPurpose />
+    <ConnectedBusinessAreas />
+    <TeamCollaborationMap />
+    <WorkingPrinciplesCTA />
+  </main>
+
+  <Footer />
+</Layout>

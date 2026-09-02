@@ -1,0 +1,194 @@
+---
+---
+<section class="section-migration" id="migration">
+  <div class="container">
+    <div class="migration-wrapper">
+      
+      <div class="migration-text">
+        <span class="weroast-badge-pill" style="margin-bottom: 1.25rem;">
+          O trecere controlată
+        </span>
+        <h2 class="migration-title">
+          URL-urile existente și dependențele tehnice sunt planificate cu atenție.
+        </h2>
+        <p class="migration-desc">
+          Dacă se modifică structura, conținutul sau tehnologia, migrarea este planificată de la început.
+        </p>
+        <p class="migration-disclaimer">
+          Aceste măsuri reduc riscurile tehnice cunoscute. Nu pot fi garantate poziții în motoarele de căutare, volume de trafic sau rezultate comerciale.
+        </p>
+      </div>
+
+      <div class="migration-tech-box">
+        <div class="tech-box-header">
+          <div class="tech-dot dot-r"></div>
+          <div class="tech-dot dot-y"></div>
+          <div class="tech-dot dot-g"></div>
+          <span class="tech-box-title">migration-plan.sh</span>
+        </div>
+        <ul class="tech-checklist">
+          <li>
+            <svg class="tech-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            identificarea URL-urilor și conținuturilor relevante;
+          </li>
+          <li>
+            <svg class="tech-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            asocierea logică a paginilor vechi cu cele noi;
+          </li>
+          <li>
+            <svg class="tech-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            planificarea și verificarea redirecționărilor 301;
+          </li>
+          <li>
+            <svg class="tech-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            controlul legăturilor interne, titlurilor, etichetelor canonice și indexării;
+          </li>
+          <li>
+            <svg class="tech-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            verificarea sitemap-ului, codurilor de stare, găzduirii, domeniului și accesurilor;
+          </li>
+          <li>
+            <svg class="tech-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            utilizarea datelor existente din Analytics sau Search Console când sunt relevante;
+          </li>
+          <li>
+            <svg class="tech-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            testarea conținuturilor, funcțiilor și afișării înainte de lansare.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-migration {
+    padding: 7rem 0;
+    background: var(--bg-page);
+  }
+
+  .migration-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .migration-text {
+    max-width: 500px;
+  }
+
+  .migration-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 2.6rem);
+    font-weight: 800;
+    color: var(--brand-navy);
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+  }
+
+  .migration-desc {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .migration-disclaimer {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    padding-left: 1rem;
+    border-left: 3px solid var(--border-light);
+    font-style: italic;
+  }
+
+  .migration-tech-box {
+    background: #0f172a;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: 0 24px 48px rgba(15, 23, 42, 0.25);
+  }
+
+  .tech-box-header {
+    background: #1e293b;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid #334155;
+  }
+
+  .tech-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  .dot-r { background: #ef4444; }
+  .dot-y { background: #f59e0b; }
+  .dot-g { background: #10b981; }
+
+  .tech-box-title {
+    margin-left: 1rem;
+    color: #94a3b8;
+    font-family: monospace;
+    font-size: 0.9rem;
+  }
+
+  .tech-checklist {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .tech-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    color: #e2e8f0;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+
+  .tech-check-icon {
+    width: 22px;
+    height: 22px;
+    color: #34d399;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  @media (max-width: 960px) {
+    .migration-wrapper {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    .migration-text {
+      max-width: 100%;
+    }
+  }
+</style>

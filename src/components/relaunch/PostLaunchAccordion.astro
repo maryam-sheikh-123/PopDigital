@@ -1,0 +1,155 @@
+---
+---
+<section class="section-post-launch" id="post-launch">
+  <div class="container">
+    <div class="post-launch-grid">
+      
+      <div class="pl-sidebar">
+        <span class="weroast-badge-pill" style="margin-bottom: 1.25rem;">
+          După publicare
+        </span>
+        <h2 class="pl-title">
+          Verificăm ceea ce a fost convenit pentru relansare.
+        </h2>
+        <div class="pl-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+      </div>
+
+      <div class="pl-accordion-wrapper">
+        <details class="pl-accordion" open>
+          <summary class="pl-summary">
+            Suport și Asistență Continuă
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </summary>
+          <div class="pl-panel">
+            <p>
+              După lansare sunt controlate punctele tehnice convenite. Dacă este stabilit expres, vă putem sprijini ulterior prin mentenanță, remedierea erorilor, optimizarea performanței, conținut sau dezvoltarea SEO.
+            </p>
+            <p class="pl-note">
+              Asistența continuă este convenită separat, în funcție de website și obiective.
+            </p>
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-post-launch {
+    padding: 6rem 0;
+    background: var(--bg-page);
+  }
+
+  .post-launch-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-xl);
+    padding: 3.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+  }
+
+  .pl-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pl-title {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--brand-navy);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  .pl-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--brand-purple-soft);
+    color: var(--brand-purple);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pl-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .pl-accordion {
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  
+  .pl-summary {
+    padding: 1.5rem;
+    background: #f8fafc;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    transition: background 0.2s;
+  }
+  .pl-summary::-webkit-details-marker {
+    display: none;
+  }
+  .pl-summary:hover {
+    background: #f1f5f9;
+  }
+  .chevron {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+  details[open] .chevron {
+    transform: rotate(180deg);
+  }
+
+  .pl-panel {
+    padding: 1.5rem;
+    background: #ffffff;
+    border-top: 1px solid var(--border-light);
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .pl-note {
+    font-weight: 600;
+    color: var(--text-dark);
+    padding-left: 1rem;
+    border-left: 3px solid var(--border-light);
+  }
+
+  @media (max-width: 768px) {
+    .post-launch-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      padding: 2.5rem 1.5rem;
+    }
+  }
+</style>

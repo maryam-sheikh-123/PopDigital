@@ -1,0 +1,179 @@
+---
+---
+<section class="section-analysis-concept" id="analysis">
+  <div class="container">
+    <div class="ac-grid">
+      
+      <div class="ac-header">
+        <span class="weroast-badge-pill" style="margin-bottom: 1.5rem; background: var(--bg-page); border: 1px solid var(--border-light); color: var(--text-muted); border-radius: 0;">
+          O bază solidă pentru decizie
+        </span>
+        <h2 class="ac-title">
+          Proiectele complexe încep înainte de dezvoltare.
+        </h2>
+        <p class="ac-desc">
+          Pentru o sarcină mică și clar delimitată, aria proiectului poate fi definită direct. Pentru procese complexe sau mai multe sisteme implicate poate fi necesară o etapă separată de analiză și concept care clarifică:
+        </p>
+      </div>
+
+      <div class="ac-deliverable-sheet">
+        <ul class="toc-list">
+          <li>
+            <span class="toc-num">01.</span>
+            <span class="toc-text">procesul actual și rezultatul dorit;</span>
+            <span class="toc-dots"></span>
+          </li>
+          <li>
+            <span class="toc-num">02.</span>
+            <span class="toc-text">utilizatorii, rolurile și responsabilitățile;</span>
+            <span class="toc-dots"></span>
+          </li>
+          <li>
+            <span class="toc-num">03.</span>
+            <span class="toc-text">datele și sistemele relevante;</span>
+            <span class="toc-dots"></span>
+          </li>
+          <li>
+            <span class="toc-num">04.</span>
+            <span class="toc-text">variantele de soluționare, dependențele și riscurile;</span>
+            <span class="toc-dots"></span>
+          </li>
+          <li>
+            <span class="toc-num">05.</span>
+            <span class="toc-text">recomandarea pentru standard, integrare, automatizare, dezvoltare sau oprire argumentată;</span>
+            <span class="toc-dots"></span>
+          </li>
+          <li>
+            <span class="toc-num">06.</span>
+            <span class="toc-text">ce include prima versiune utilizabilă;</span>
+            <span class="toc-dots"></span>
+          </li>
+          <li>
+            <span class="toc-num">07.</span>
+            <span class="toc-text">baza pentru planificarea timpului și costurilor.</span>
+            <span class="toc-dots"></span>
+          </li>
+        </ul>
+        
+        <div class="ac-footer">
+          Rezultatul, aria și costul analizei sunt stabilite înainte de începere.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-analysis-concept {
+    padding: 8rem 0;
+    background: #ffffff;
+  }
+
+  .ac-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .ac-header {
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+  }
+
+  .ac-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    font-weight: 400;
+    color: var(--brand-navy);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  .ac-desc {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+
+  .ac-deliverable-sheet {
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    padding: 3rem 4rem;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.03);
+  }
+
+  .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3rem 0;
+  }
+  .toc-list li {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+
+  .toc-num {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    color: var(--brand-navy);
+    margin-right: 1rem;
+    font-weight: 700;
+  }
+
+  .toc-text {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    background: #ffffff;
+    padding-right: 1rem;
+    z-index: 2;
+  }
+
+  .toc-dots {
+    flex-grow: 1;
+    border-bottom: 1px dotted var(--text-muted);
+    position: relative;
+    top: -4px;
+    z-index: 1;
+    min-width: 2rem;
+  }
+
+  .ac-footer {
+    padding-top: 2rem;
+    border-top: 1px solid var(--brand-navy);
+    font-size: 1rem;
+    font-family: var(--font-mono, monospace);
+    color: var(--brand-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 900px) {
+    .ac-grid {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+    .ac-header {
+      position: static;
+    }
+    .ac-deliverable-sheet {
+      padding: 2.5rem 2rem;
+    }
+    .toc-list li {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+    .toc-text {
+      padding-right: 0;
+      padding-left: 2.5rem;
+      margin-top: -1.25rem;
+    }
+    .toc-dots {
+      display: none;
+    }
+  }
+</style>

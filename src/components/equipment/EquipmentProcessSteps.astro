@@ -1,0 +1,193 @@
+---
+---
+<section class="section-equipment-process" id="process">
+  <div class="container">
+    <div class="ep-header">
+      <span class="weroast-badge-pill" style="margin-bottom: 1.5rem; background: var(--bg-white); border: 1px solid var(--border-light); color: var(--text-muted); border-radius: 0;">
+        De la cerere la produsul final
+      </span>
+      <h2 class="ep-title">
+        Transformăm nevoia într-o soluție coordonată.
+      </h2>
+    </div>
+
+    <!-- Architectural Timeline -->
+    <div class="ep-timeline">
+      
+      <div class="timeline-track"></div>
+      
+      <div class="timeline-step">
+        <div class="step-marker">01</div>
+        <div class="step-content">
+          <h3 class="step-title">Clarificăm necesarul</h3>
+          <p class="step-desc">Stabilim utilizarea, destinatarii, cantitatea și termenul.</p>
+        </div>
+      </div>
+      
+      <div class="timeline-step">
+        <div class="step-marker">02</div>
+        <div class="step-content">
+          <h3 class="step-title">Selectăm opțiunile</h3>
+          <p class="step-desc">Evaluăm produsele, materialele și variantele potrivite cerințelor.</p>
+        </div>
+      </div>
+      
+      <div class="timeline-step">
+        <div class="step-marker">03</div>
+        <div class="step-content">
+          <h3 class="step-title">Pregătim designul</h3>
+          <p class="step-desc">Coordonăm logo-ul, poziționarea, personalizarea și fișierele necesare.</p>
+        </div>
+      </div>
+      
+      <!-- Approval Gate -->
+      <div class="timeline-step approval-gate">
+        <div class="gate-line"></div>
+        <div class="step-marker gate-marker">04</div>
+        <div class="step-content">
+          <h3 class="step-title">Aprobăm execuția</h3>
+          <p class="step-desc">Varianta confirmată devine baza strictă pentru producție.</p>
+        </div>
+      </div>
+      
+      <div class="timeline-step">
+        <div class="step-marker">05</div>
+        <div class="step-content">
+          <h3 class="step-title">Producție și livrare</h3>
+          <p class="step-desc">Producția, predarea sau livrarea are loc conform condițiilor convenite.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-equipment-process {
+    padding: 8rem 0;
+    background: #ffffff;
+  }
+
+  .ep-header {
+    max-width: 700px;
+    margin-bottom: 6rem;
+  }
+
+  .ep-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.2;
+  }
+
+  /* Architectural Timeline */
+  .ep-timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .timeline-track {
+    position: absolute;
+    top: 36px; /* align with markers */
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--border-subtle);
+    z-index: 1;
+  }
+
+  .timeline-step {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step-marker {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    color: var(--brand-navy);
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .step-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--brand-navy);
+    margin-bottom: 0.75rem;
+  }
+
+  .step-desc {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  /* The Gate at Step 4 */
+  .approval-gate {
+    position: relative;
+  }
+  .gate-line {
+    position: absolute;
+    left: 19px; /* center of marker */
+    top: -2rem;
+    bottom: -2rem;
+    width: 2px;
+    background: var(--brand-purple);
+    z-index: -1;
+  }
+  .gate-marker {
+    background: var(--brand-purple);
+    color: #ffffff;
+    border-color: var(--brand-purple);
+    box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px var(--brand-purple);
+  }
+  .approval-gate .step-title {
+    color: var(--brand-purple);
+  }
+
+  @media (max-width: 900px) {
+    .ep-timeline {
+      grid-template-columns: 1fr;
+      padding-left: 20px;
+      gap: 3rem;
+    }
+    .timeline-track {
+      top: 0;
+      bottom: 0;
+      left: 39px;
+      width: 1px;
+      height: auto;
+    }
+    .timeline-step {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    .step-marker {
+      margin-bottom: 0;
+      flex-shrink: 0;
+    }
+    .gate-line {
+      left: -2rem;
+      right: -2rem;
+      top: 19px;
+      bottom: auto;
+      height: 2px;
+      width: auto;
+    }
+  }
+</style>

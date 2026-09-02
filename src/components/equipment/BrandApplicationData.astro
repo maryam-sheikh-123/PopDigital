@@ -1,0 +1,150 @@
+---
+---
+<section class="section-brand-app" id="application">
+  <div class="container">
+    <div class="ba-grid">
+      
+      <!-- Left: Massive Negative Space & Title -->
+      <div class="ba-left">
+        <span class="weroast-badge-pill" style="margin-bottom: 2rem; background: var(--bg-page); border: 1px solid var(--border-light); color: var(--text-muted); border-radius: 0;">
+          Brandul dumneavoastră pe formatul potrivit
+        </span>
+        <h2 class="ba-title">Designul trebuie să funcționeze și pe produsul real.</h2>
+        <p class="ba-desc">
+          Un logo care arată bine pe website poate necesita adaptări pentru textile, materiale tipărite, panouri sau autovehicule.
+        </p>
+        
+        <div class="ba-footer">
+          Dacă lipsește încă o bază vizuală potrivită, <a href="/ro/marketing-design/" class="ba-link">Marketing și design</a> poate fi primul pas.
+        </div>
+      </div>
+
+      <!-- Right: Staggered Right-Aligned List -->
+      <div class="ba-right">
+        <ul class="ba-list">
+          <li>
+            <p>verificarea logo-urilor și fișierelor grafice;</p>
+            <span class="ba-num">/01</span>
+          </li>
+          <li>
+            <p>adaptarea designului la format și utilizare;</p>
+            <span class="ba-num">/02</span>
+          </li>
+          <li>
+            <p>pregătirea fișierelor pentru tipar sau producție;</p>
+            <span class="ba-num">/03</span>
+          </li>
+          <li>
+            <p>coordonarea culorilor, dimensiunilor și poziționării;</p>
+            <span class="ba-num">/04</span>
+          </li>
+          <li>
+            <p>stabilirea metodei potrivite de personalizare;</p>
+            <span class="ba-num">/05</span>
+          </li>
+          <li>
+            <p>armonizarea vizuală a produselor.</p>
+            <span class="ba-num">/06</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-brand-app {
+    padding: 10rem 0;
+    background: #0f172a; /* Deep navy */
+    color: #f8fafc;
+  }
+
+  .ba-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 8rem;
+    align-items: center;
+  }
+
+  .ba-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 4vw, 3.2rem);
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 2rem;
+    color: #ffffff;
+  }
+
+  .ba-desc {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 4rem;
+    max-width: 500px;
+  }
+
+  .ba-footer {
+    padding-top: 2rem;
+    border-top: 1px solid #334155;
+    font-size: 1.05rem;
+    color: #cbd5e1;
+  }
+  .ba-link {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    text-decoration: none;
+    transition: color 0.3s, border-color 0.3s;
+  }
+  .ba-link:hover {
+    color: #818cf8;
+    border-color: #818cf8;
+  }
+
+  .ba-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ba-list li {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid #1e293b;
+  }
+  .ba-list li:first-child {
+    padding-top: 0;
+  }
+  .ba-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .ba-list p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #e2e8f0;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .ba-num {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.85rem;
+    color: #3b82f6;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 900px) {
+    .ba-grid {
+      grid-template-columns: 1fr;
+      gap: 5rem;
+    }
+  }
+</style>

@@ -1,0 +1,177 @@
+---
+---
+<section class="section-product-families" id="products">
+  <div class="container">
+    <div class="pf-header">
+      <span class="weroast-badge-pill" style="margin-bottom: 2rem;">Soluții selectate</span>
+      <h2 class="pf-title">Echipare pentru punctele de contact vizibile ale companiei.</h2>
+    </div>
+
+    <div class="pf-catalog-index">
+      
+      <div class="catalog-item">
+        <div class="watermark-num">01</div>
+        <div class="item-content">
+          <h3 class="item-title">Îmbrăcăminte de lucru și corporate</h3>
+          <p class="item-desc">
+            Tricouri, polo, hanorace, cămăși, jachete, fleece, pantaloni de lucru, șepci sau căciuli, cu personalizare adaptată produsului.
+          </p>
+        </div>
+      </div>
+
+      <div class="catalog-item staggered">
+        <div class="watermark-num">02</div>
+        <div class="item-content">
+          <h3 class="item-title">Materiale tipărite</h3>
+          <p class="item-desc">
+            Cărți de vizită, pliante, hârtie cu antet, plicuri, broșuri, mape sau afișe.
+          </p>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <div class="watermark-num">03</div>
+        <div class="item-content">
+          <h3 class="item-title">Publicitate vizuală și inscripționări</h3>
+          <p class="item-desc">
+            Panouri, bannere, roll-up-uri, autocolante, folii și inscripționări în funcție de proiect.
+          </p>
+        </div>
+      </div>
+
+      <div class="catalog-item staggered">
+        <div class="watermark-num">04</div>
+        <div class="item-content">
+          <h3 class="item-title">Grafică și colantare pentru autovehicule</h3>
+          <p class="item-desc">
+            Design, logo-uri, texte și folii. Producția și montajul sunt clarificate separat.
+          </p>
+        </div>
+      </div>
+
+      <div class="catalog-item">
+        <div class="watermark-num">05</div>
+        <div class="item-content">
+          <h3 class="item-title">Articole promoționale selectate</h3>
+          <p class="item-desc">
+            Articole pentru clienți, angajați, evenimente sau campanii, în funcție de ocazie, cantitate, buget și disponibilitate.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pf-footer">
+      <p>Disponibilitatea, potrivirea și execuția concretă sunt verificate pentru fiecare solicitare. Nu promitem un sortiment complet.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-product-families {
+    padding: 8rem 0;
+    background: #ffffff;
+  }
+
+  .pf-header {
+    max-width: 800px;
+    margin: 0 auto 6rem;
+    text-align: center;
+  }
+
+  .pf-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 4vw, 3.4rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  .pf-catalog-index {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .catalog-item {
+    position: relative;
+    padding-left: 15%;
+    display: flex;
+    align-items: center;
+  }
+  .catalog-item.staggered {
+    padding-left: 35%;
+  }
+
+  .watermark-num {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: var(--font-heading);
+    font-size: 14rem;
+    font-weight: 800;
+    color: var(--bg-page);
+    line-height: 1;
+    z-index: 1;
+    letter-spacing: -0.05em;
+    user-select: none;
+  }
+  .catalog-item.staggered .watermark-num {
+    left: 20%;
+  }
+
+  .item-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-light);
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .item-title {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--brand-navy);
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .item-desc {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+
+  .pf-footer {
+    max-width: 700px;
+    margin: 6rem auto 0;
+    text-align: center;
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    font-style: italic;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-light);
+  }
+
+  @media (max-width: 900px) {
+    .catalog-item, .catalog-item.staggered {
+      padding-left: 0;
+    }
+    .watermark-num, .catalog-item.staggered .watermark-num {
+      font-size: 8rem;
+      left: 0;
+      top: -2rem;
+      transform: none;
+      opacity: 0.5;
+    }
+    .item-content {
+      padding-top: 4rem;
+    }
+  }
+</style>

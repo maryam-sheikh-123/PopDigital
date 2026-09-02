@@ -1,0 +1,182 @@
+---
+---
+<section class="section-editorial-hero" id="hero">
+  <div class="container">
+    <div class="eh-grid">
+      
+      <!-- Left Editorial Column -->
+      <div class="eh-left">
+        <div class="eh-eyebrow">
+          <span class="weroast-badge-pill" style="border-radius: 0; border: 1px solid var(--border-light); background: transparent; color: var(--text-muted); font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase;">
+            Marketing and design for companies
+          </span>
+        </div>
+        
+        <h1 class="eh-title">
+          O prezență a companiei clară, coerentă și ușor de înțeles.
+        </h1>
+        
+        <div class="eh-divider"></div>
+        
+        <p class="eh-lead">
+          Un marketing bun nu începe cu o singură reclamă. Un design bun nu începe doar cu o grafică atrăgătoare. Ambele trebuie să transmită ce reprezintă compania, cui i se adresează și care este următorul pas.
+        </p>
+      </div>
+
+      <!-- Right Editorial Column -->
+      <div class="eh-right">
+        <div class="eh-right-content">
+          <p class="eh-body">
+            Construim o fundație clară împreună cu dumneavoastră și implementăm măsuri care se potrivesc obiectivului, publicului și resurselor disponibile.
+          </p>
+          <div class="eh-reassurance">
+            <img src="/images/gabriel-antonio-pop.png" alt="Gabriel Pop" class="eh-avatar">
+            <p>Gabriel Pop conduce personal proiectul. Echipa noastră armonizează brandul, designul, conținutul și măsurile stabilite.</p>
+          </div>
+          
+          <a href="/contact/" class="eh-cta">
+            Discutați proiectul de marketing
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-editorial-hero {
+    padding-top: calc(var(--header-height) + 4rem);
+    padding-bottom: 6rem;
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .eh-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 0;
+    border: 1px solid var(--border-light);
+  }
+
+  .eh-left {
+    padding: 5rem 4rem;
+    border-right: 1px solid var(--border-light);
+  }
+
+  .eh-eyebrow {
+    margin-bottom: 3rem;
+  }
+
+  .eh-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 4vw, 3.8rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 4rem;
+  }
+
+  .eh-divider {
+    width: 60px;
+    height: 1px;
+    background: var(--text-dark);
+    margin-bottom: 3rem;
+  }
+
+  .eh-lead {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    line-height: 1.7;
+    font-weight: 400;
+  }
+
+  .eh-right {
+    display: flex;
+    align-items: flex-end;
+    padding: 5rem 4rem;
+    background: #f8fafc;
+  }
+
+  .eh-right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .eh-body {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .eh-reassurance {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background: #ffffff;
+    border: 1px solid var(--border-light);
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+  .eh-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    object-fit: cover;
+    object-position: center 15%;
+    filter: grayscale(100%);
+  }
+
+  .eh-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--text-dark);
+    border-bottom: 1px solid var(--text-dark);
+    color: var(--brand-navy);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .eh-cta:hover {
+    background: var(--brand-navy);
+    color: #ffffff;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-color: var(--brand-navy);
+  }
+  .eh-cta svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+  .eh-cta:hover svg {
+    transform: translateX(4px);
+  }
+
+  @media (max-width: 1024px) {
+    .eh-grid {
+      grid-template-columns: 1fr;
+    }
+    .eh-left {
+      border-right: none;
+      border-bottom: 1px solid var(--border-light);
+      padding: 4rem 2rem;
+    }
+    .eh-right {
+      padding: 4rem 2rem;
+    }
+  }
+</style>

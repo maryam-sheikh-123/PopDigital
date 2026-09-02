@@ -1,0 +1,122 @@
+---
+---
+<section class="section-quality" id="quality">
+  <div class="container">
+    <div class="quality-header">
+      <span class="starburst-badge">
+        Mai mult decât o suprafață atractivă
+      </span>
+      <h2 class="quality-title">
+        Ce trebuie să ofere website-ul în activitatea de zi cu zi.
+      </h2>
+    </div>
+
+    <div class="quality-bento-grid">
+      <!-- Card 1 -->
+      <div class="bento-card bento-purple">
+        <h3 class="bento-title">Ușor de înțeles</h3>
+        <p class="bento-text">
+          Vizitatorii recunosc rapid oferta, relevanța și următorul pas.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bento-card bento-yellow">
+        <h3 class="bento-title">Util pe orice dispozitiv</h3>
+        <p class="bento-text">
+          Conținutul, navigarea și interacțiunile funcționează pe diferite dimensiuni de ecran.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bento-card bento-green">
+        <h3 class="bento-title">Corect tehnic</h3>
+        <p class="bento-text">
+          Performanța, structura semantică, bazele SEO și accesibilitatea sunt luate în considerare de la început.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bento-card bento-blue">
+        <h3 class="bento-title">Ușor de administrat și extins</h3>
+        <p class="bento-text">
+          Baza tehnică este aleasă după cerințe, nu după o platformă impusă dinainte.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-quality {
+    padding: 6rem 0;
+    background: #ffffff;
+  }
+  .quality-header {
+    margin-bottom: 3.5rem;
+  }
+  .quality-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 2.6rem);
+    font-weight: 800;
+    color: var(--brand-navy);
+    line-height: 1.2;
+    max-width: 700px;
+  }
+  
+  .quality-bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+  }
+
+  .bento-card {
+    padding: 3rem 2.5rem;
+    border-radius: var(--radius-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 220px;
+    transition: transform 0.3s ease;
+  }
+  .bento-card:hover {
+    transform: scale(1.02);
+  }
+
+  .bento-title {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--brand-navy);
+  }
+  .bento-text {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .bento-purple {
+    background: #f5f3fa;
+  }
+  .bento-yellow {
+    background: #fffbeb;
+  }
+  .bento-green {
+    background: #f0fdf4;
+  }
+  .bento-blue {
+    background: #eff6ff;
+  }
+
+  @media (max-width: 768px) {
+    .quality-bento-grid {
+      grid-template-columns: 1fr;
+    }
+    .bento-card {
+      min-height: auto;
+      padding: 2rem;
+    }
+  }
+</style>

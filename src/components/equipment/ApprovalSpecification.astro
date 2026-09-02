@@ -1,0 +1,176 @@
+---
+---
+<section class="section-approval" id="approval">
+  <div class="container">
+    
+    <div class="approval-sheet-wrapper">
+      <div class="approval-sheet">
+        
+        <div class="sheet-header">
+          <span class="sheet-badge">Claritate înainte de producție</span>
+          <div class="sheet-stamp">Document Approval</div>
+        </div>
+
+        <h2 class="sheet-title">
+          Varianta convenită este stabilită înainte de începerea producției.
+        </h2>
+
+        <div class="sheet-body">
+          <p class="sheet-text">
+            În funcție de comandă, clarificăm produsul, modelul, materialul, culoarea, mărimile, cantitățile, designul, poziționarea, metoda de producție, prețul, serviciile și perioada estimată.
+          </p>
+          <p class="sheet-text highlight-box">
+            Verificați și confirmați varianta convenită. Producția începe abia după aprobare. Modificările ulterioare pot influența prețul și termenul.
+          </p>
+        </div>
+
+        <div class="sheet-footer">
+          <span class="footer-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </span>
+          <p>
+            Important pentru implementare: livrarea, montajul, mostrele, cantitățile minime și termenele sunt menționate numai dacă sunt confirmate pentru produsul respectiv.
+          </p>
+        </div>
+        
+        <!-- Decorative signature line -->
+        <div class="signature-line">
+          <span>Aprobat pentru producție</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .section-approval {
+    padding: 8rem 0;
+    background: #e2e8f0; /* Slightly darker background to lift the sheet */
+  }
+
+  .approval-sheet-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    position: relative;
+    padding: 1.5rem; /* Outer margin for the inner border effect */
+  }
+
+  .approval-sheet {
+    border: 2px solid var(--brand-navy);
+    padding: 4rem;
+    position: relative;
+  }
+
+  .sheet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 1.5rem;
+  }
+
+  .sheet-badge {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    color: var(--brand-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .sheet-stamp {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.75rem;
+    color: var(--brand-purple);
+    border: 1px solid var(--brand-purple);
+    padding: 0.25rem 0.5rem;
+    text-transform: uppercase;
+    transform: rotate(2deg);
+  }
+
+  .sheet-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 2.6rem);
+    font-weight: 800;
+    color: var(--brand-navy);
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .sheet-body {
+    margin-bottom: 4rem;
+  }
+
+  .sheet-text {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .highlight-box {
+    background: #f8fafc;
+    border-left: 4px solid var(--brand-navy);
+    padding: 1.5rem;
+    font-weight: 500;
+    color: var(--brand-navy);
+    margin-top: 2rem;
+  }
+
+  .sheet-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding-top: 2rem;
+    border-top: 1px dashed var(--text-dark);
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    font-style: italic;
+  }
+  .footer-icon {
+    flex-shrink: 0;
+    color: var(--text-dark);
+    width: 24px;
+    height: 24px;
+  }
+
+  .signature-line {
+    position: absolute;
+    bottom: -1px; /* Overlap border */
+    right: 4rem;
+    border-top: 1px solid var(--brand-navy);
+    width: 250px;
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+  .signature-line span {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 768px) {
+    .approval-sheet-wrapper {
+      padding: 0.75rem;
+    }
+    .approval-sheet {
+      padding: 2.5rem 1.5rem;
+    }
+    .signature-line {
+      right: 1.5rem;
+      width: 150px;
+    }
+  }
+</style>

@@ -1,0 +1,157 @@
+---
+---
+<section class="section-next-steps" id="next-steps">
+  <div class="container">
+    <div class="ns-wrapper">
+      
+      <div class="ns-header">
+        <span class="ns-eyebrow">După solicitarea dumneavoastră</span>
+        <h2 class="ns-title">Cum vom proceda.</h2>
+      </div>
+
+      <div class="ns-timeline">
+        
+        <div class="ns-node">
+          <div class="node-num">01</div>
+          <h3 class="node-title">Gabriel analizează proiectul dumneavoastră</h3>
+          <p class="node-desc">
+            El vede ce informații sunt disponibile și ce puncte ar trebui clarificate.
+          </p>
+        </div>
+        
+        <div class="ns-node">
+          <div class="node-num">02</div>
+          <h3 class="node-title">Primiți un răspuns</h3>
+          <p class="node-desc">
+            Gabriel vă va contacta personal cu întrebări sau cu o primă evaluare.
+          </p>
+        </div>
+        
+        <div class="ns-node">
+          <div class="node-num">03</div>
+          <h3 class="node-title">Clarificăm următorul pas</h3>
+          <p class="node-desc">
+            Acesta poate fi o discuție, o ofertă concretă sau o fază inițială delimitată de analiză și concept.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="ns-footer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span>Solicitarea dumneavoastră ajunge direct la Gabriel Antonio Pop.</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-next-steps {
+    padding: 8rem 0;
+    background: var(--brand-navy);
+    color: #ffffff;
+  }
+
+  .ns-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .ns-header {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .ns-eyebrow {
+    display: inline-block;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--brand-purple);
+    margin-bottom: 1.5rem;
+  }
+
+  .ns-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 1.15;
+  }
+
+  /* Horizontal Timeline Grid */
+  .ns-timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    border-top: 1px solid #374151;
+    padding-top: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  .ns-node {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .node-num {
+    font-family: var(--font-mono, monospace);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--brand-purple);
+    margin-bottom: 1.5rem;
+  }
+
+  .node-title {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  .node-desc {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .ns-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 3rem;
+    border-top: 1px dashed #374151;
+    color: #94a3b8;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+  .ns-footer svg {
+    width: 24px;
+    height: 24px;
+    color: var(--brand-purple);
+  }
+
+  @media (max-width: 900px) {
+    .ns-timeline {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    .ns-node {
+      border-bottom: 1px solid #374151;
+      padding-bottom: 3rem;
+    }
+    .ns-node:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+</style>

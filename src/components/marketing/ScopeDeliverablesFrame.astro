@@ -1,0 +1,163 @@
+---
+---
+<section class="section-scope" id="scope">
+  <div class="container">
+    <div class="scope-spec-sheet">
+      
+      <div class="spec-header">
+        <div class="spec-eyebrow">A clearly defined project</div>
+        <h2 class="spec-title">Proiectul include doar ceea ce susține obiectivul dumneavoastră.</h2>
+        <p class="spec-desc">
+          Nu orice companie are nevoie de un brand nou, conținut nou și o campanie simultan. De aceea, definim clar ce include proiectul înainte de implementare.
+        </p>
+      </div>
+
+      <div class="spec-table">
+        <div class="spec-col">
+          <h3 class="spec-col-title">Definire & Așteptări</h3>
+          <ul class="spec-list">
+            <li>rezultatul care trebuie obținut;</li>
+            <li>serviciile incluse;</li>
+            <li>materialele existente care vor fi utilizate;</li>
+          </ul>
+        </div>
+        
+        <div class="spec-col">
+          <h3 class="spec-col-title">Proces & Livrabile</h3>
+          <ul class="spec-list">
+            <li>informațiile, deciziile și aprobările necesare;</li>
+            <li>rezultatele și fișierele care vor fi predate;</li>
+            <li>măsurile ulterioare care nu fac parte din proiect.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-footer">
+        Dacă aveți nevoie mai întâi de o fundație digitală completă, consultați <a href="/ro/creare-site-pentru-firma/" class="spec-link">Professionell starten</a>. Pentru a moderniza un website existent, vedeți <a href="/ro/refacere-si-optimizare-site/" class="spec-link">Website Relaunch</a>.
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-scope {
+    padding: 8rem 0;
+    background: #ffffff;
+  }
+
+  .scope-spec-sheet {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid var(--text-dark);
+    padding: 1px; /* space for inner border */
+  }
+
+  .spec-header {
+    padding: 4rem 3rem;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .spec-eyebrow {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .spec-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 2.6rem);
+    font-weight: 500;
+    color: var(--brand-navy);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .spec-desc {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    max-width: 700px;
+  }
+
+  .spec-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .spec-col {
+    padding: 3rem;
+  }
+  .spec-col:first-child {
+    border-right: 1px solid var(--border-light);
+  }
+
+  .spec-col-title {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.9rem;
+    color: var(--brand-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--text-dark);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+
+  .spec-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .spec-list li {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    padding-left: 1.25rem;
+    position: relative;
+    line-height: 1.5;
+  }
+  .spec-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--border-subtle);
+  }
+
+  .spec-footer {
+    padding: 2rem 3rem;
+    background: #f8fafc;
+    font-size: 1rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+  .spec-link {
+    color: var(--brand-navy);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--brand-navy);
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .spec-link:hover {
+    color: var(--brand-purple);
+    border-color: var(--brand-purple);
+  }
+
+  @media (max-width: 768px) {
+    .spec-table {
+      grid-template-columns: 1fr;
+    }
+    .spec-col:first-child {
+      border-right: none;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .spec-header, .spec-col, .spec-footer {
+      padding: 2.5rem 1.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,211 @@
+---
+---
+<section class="section-equipment-hero" id="hero">
+  <div class="container">
+    <div class="eh-wrapper">
+      
+      <!-- Text Side -->
+      <div class="eh-text">
+        <span class="eh-eyebrow">Customized equipment for companies</span>
+        <h1 class="eh-title">
+          Îmbrăcăminte de lucru, materiale tipărite și inscripționări adaptate imaginii companiei.
+        </h1>
+        <p class="eh-lead">
+          Indiferent dacă este utilizată la birou, pe șantier, pe drum, în vehicule sau în contact cu clienții, echiparea trebuie să corespundă utilizării reale și identității companiei.
+        </p>
+        <p class="eh-body">
+          Vă sprijinim în selectarea, proiectarea și coordonarea produselor și variantelor potrivite. Clarificăm utilizarea, cantitatea, bugetul și termenul dorit.
+        </p>
+        
+        <div class="eh-action">
+          <a href="/contact/" class="btn-eh-primary">
+            Discutați echiparea companiei
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          
+          <div class="eh-reassurance">
+            <img src="/images/gabriel-antonio-pop.png" alt="Gabriel Pop" class="eh-avatar">
+            <p>Gabriel Pop preia personal cererea. Echipa noastră coordonează designul, pregătirea datelor și implementarea stabilită.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texture Visual Side -->
+      <div class="eh-visual">
+        <div class="texture-pane">
+          <!-- A subtle abstract woven texture created via CSS gradients to avoid generic AI imagery -->
+          <div class="woven-overlay"></div>
+          <div class="material-badge">Material & Format</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-equipment-hero {
+    padding-top: calc(var(--header-height) + 4rem);
+    padding-bottom: 6rem;
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .eh-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 75vh;
+  }
+
+  .eh-text {
+    padding: 4rem 4rem 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .eh-eyebrow {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 0.5rem;
+    align-self: flex-start;
+  }
+
+  .eh-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 4vw, 3.4rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+  }
+
+  .eh-lead {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .eh-body {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 3.5rem;
+    max-width: 90%;
+  }
+
+  .eh-action {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-top: 1px solid var(--border-light);
+    padding-top: 2rem;
+  }
+
+  .btn-eh-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 2rem;
+    background: var(--brand-navy);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    align-self: flex-start;
+  }
+  .btn-eh-primary:hover {
+    background: #0f1b30;
+  }
+  .btn-eh-primary svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  .btn-eh-primary:hover svg {
+    transform: translateX(6px);
+  }
+
+  .eh-reassurance {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+    max-width: 450px;
+  }
+  .eh-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    object-fit: cover;
+    filter: grayscale(100%);
+  }
+
+  .eh-visual {
+    background: var(--bg-page);
+    padding: 2rem;
+    display: flex;
+  }
+
+  .texture-pane {
+    width: 100%;
+    height: 100%;
+    background: #e2e8f0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+  }
+
+  /* Woven texture effect */
+  .woven-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(45deg, rgba(0,0,0,0.02) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.02) 75%, rgba(0,0,0,0.02)),
+      linear-gradient(45deg, rgba(0,0,0,0.02) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.02) 75%, rgba(0,0,0,0.02));
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    mix-blend-mode: multiply;
+  }
+
+  .material-badge {
+    position: relative;
+    z-index: 2;
+    background: #ffffff;
+    padding: 0.5rem 1rem;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.85rem;
+    color: var(--brand-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 1024px) {
+    .eh-wrapper {
+      grid-template-columns: 1fr;
+    }
+    .eh-text {
+      padding: 2rem 0;
+    }
+    .eh-visual {
+      padding: 0;
+      min-height: 400px;
+    }
+  }
+</style>

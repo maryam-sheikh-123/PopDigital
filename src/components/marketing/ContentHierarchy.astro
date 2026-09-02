@@ -1,0 +1,129 @@
+---
+---
+<section class="section-content-hierarchy" id="content">
+  <div class="container">
+    <div class="ch-grid">
+      
+      <!-- Left: Statement -->
+      <div class="ch-left">
+        <span class="weroast-badge-pill" style="margin-bottom: 1.5rem; background: transparent; border: 1px solid var(--border-subtle); color: var(--text-muted); border-radius: 0;">
+          Comunicare ușor de înțeles
+        </span>
+        <h2 class="ch-title">
+          Un design bun are nevoie de conținut clar.
+        </h2>
+        <p class="ch-desc">
+          Clienții trebuie să înțeleagă rapid ce oferă compania, cui îi este adresată oferta și de ce este relevantă. Dezvoltăm sau revizuim conținutul necesar pentru prezența convenită.
+        </p>
+        <p class="ch-footer">
+          Faptele specifice companiei, afirmațiile de specialitate și aprobările necesare sunt coordonate cu dumneavoastră.
+        </p>
+      </div>
+
+      <!-- Right: Minimalist List -->
+      <div class="ch-right">
+        <ul class="ch-list">
+          <li class="ch-list-item">
+            mesaje centrale, titluri și prezentări ale serviciilor;
+          </li>
+          <li class="ch-list-item">
+            structura și prioritatea conținutului pentru website sau landing page;
+          </li>
+          <li class="ch-list-item">
+            conținut pentru prezentări și materiale de vânzare;
+          </li>
+          <li class="ch-list-item">
+            texte și design pentru materiale de marketing selectate;
+          </li>
+          <li class="ch-list-item">
+            adaptarea conținutului existent la diferite formate.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-content-hierarchy {
+    padding: 8rem 0;
+    background: #f8fafc; /* Subtle offset background */
+  }
+
+  .ch-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .ch-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 3.5vw, 2.8rem);
+    font-weight: 300;
+    color: var(--brand-navy);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .ch-desc {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+  }
+
+  .ch-footer {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .ch-right {
+    background: #ffffff;
+    padding: 3rem;
+    border: 1px solid var(--border-light);
+  }
+
+  .ch-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ch-list-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 1.2rem;
+    color: var(--brand-navy);
+    font-weight: 400;
+    line-height: 1.4;
+    transition: padding-left 0.3s ease;
+  }
+  .ch-list-item:first-child {
+    padding-top: 0;
+  }
+  .ch-list-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .ch-list-item:hover {
+    padding-left: 1rem;
+    color: var(--brand-purple);
+  }
+
+  @media (max-width: 900px) {
+    .ch-grid {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+    .ch-right {
+      padding: 2rem 1.5rem;
+    }
+  }
+</style>
