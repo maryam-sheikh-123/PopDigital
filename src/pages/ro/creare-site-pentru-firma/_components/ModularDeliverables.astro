@@ -1,0 +1,339 @@
+<section class="section-deliverables" id="deliverables">
+  <div class="container">
+    <div class="del-header">
+      <h2 class="del-title">Noua prezență.<br>Ce construim împreună.</h2>
+      <p class="del-desc">
+        Componentele necesare sunt stabilite înainte de începerea proiectului. În funcție de ceea ce convenim, pachetele noastre acoperă:
+      </p>
+    </div>
+
+    <div class="pricing-card-dark">
+      <!-- Left Side: Features -->
+      <div class="card-left">
+        <h3 class="left-title" id="package-title">Pachet de Bază</h3>
+        
+        <!-- Features List 1 (Basic) -->
+        <ul class="features-list active-list" id="features-basic">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span><strong>Baza strategică:</strong> Structurăm oferta, publicul, poziționarea și mesajele principale.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span><strong>Conținut și structură:</strong> Planificăm paginile, traseele vizitatorilor și materialele.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span><strong>Identitatea vizuală:</strong> Continuăm coerent elementele existente sau dezvoltăm baza.</span>
+          </li>
+        </ul>
+
+        <!-- Features List 2 (Complete) -->
+        <ul class="features-list" id="features-complete" style="display: none;">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span>Tot ce este inclus în Pachetul de Bază, plus:</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span><strong>Design web individual:</strong> Creăm un design potrivit companiei, conținutului și efectului urmărit.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span><strong>Implementare tehnică:</strong> Implementăm website-ul pentru smartphone, tabletă și desktop.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span><strong>Publicare și predare:</strong> Pregătim publicarea, accesurile și drepturile de utilizare.</span>
+          </li>
+        </ul>
+
+        <div class="bottom-disclaimer">
+          <strong>Extensii opționale:</strong> marketingul, materialele tipărite sau îmbrăcămintea pentru companie sunt incluse numai când susțin obiectivul și sunt convenite expres.
+        </div>
+      </div>
+
+      <!-- Right Side: Action Box -->
+      <div class="card-right">
+        <div class="inset-box">
+          
+          <!-- Custom Toggle -->
+          <div class="toggle-container">
+            <button class="toggle-btn active" data-target="basic">Pachet de Bază</button>
+            <button class="toggle-btn" data-target="complete">Pachet Complet</button>
+          </div>
+
+          <div class="inset-content">
+            <span class="meta-label">O SINGURĂ PLATĂ</span>
+            
+            <div class="price-display">
+              <span class="currency">€</span>
+              <span class="price-value" id="price-display">1,499</span>
+            </div>
+
+            <a href="/contact/" class="action-btn" id="action-btn">Stabilește o discuție ✨</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-deliverables {
+    padding: 2rem 0 3rem;
+    background: #ffffff;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  .del-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 4rem;
+  }
+  
+  .del-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 800;
+    color: var(--brand-navy);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+  }
+  
+  .del-desc {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  .pricing-card-dark {
+    background: var(--brand-navy);
+    border-radius: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    box-shadow: 0 30px 60px rgba(26, 47, 84, 0.15);
+    overflow: hidden;
+  }
+
+  .card-left {
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .left-title {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    letter-spacing: -0.02em;
+  }
+
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-grow: 1;
+  }
+
+  .features-list li {
+    display: flex;
+    align-items: flex-start;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .features-list li strong {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .check-circle {
+    width: 18px;
+    height: 18px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-right: 1rem;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+
+  .bottom-disclaimer {
+    margin-top: 4rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.5;
+  }
+
+  .card-right {
+    flex: 0 0 420px;
+    padding: 2.5rem 2.5rem 2.5rem 0;
+  }
+
+  .inset-box {
+    background: linear-gradient(145deg, rgba(105, 83, 138, 0.3) 0%, rgba(26, 47, 84, 0.8) 100%);
+    border-radius: 16px;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1), 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .toggle-container {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    display: flex;
+    padding: 4px;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .toggle-btn {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.6rem 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .toggle-btn.active {
+    background: #ffffff;
+    color: var(--brand-navy);
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .inset-content {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meta-label {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    display: block;
+    text-align: center;
+  }
+
+  .price-display {
+    display: flex;
+    align-items: flex-start;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+  }
+  
+  .currency {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    margin-right: 0.2rem;
+  }
+  
+  .price-value {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    font-family: var(--font-heading);
+  }
+
+  .action-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    color: var(--brand-navy);
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .action-btn:hover {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+
+  @media (max-width: 900px) {
+    .pricing-card-dark {
+      flex-direction: column;
+    }
+    
+    .card-left {
+      padding: 3rem 2rem;
+    }
+    
+    .card-right {
+      flex: none;
+      padding: 0 2rem 2rem;
+    }
+    
+    .bottom-disclaimer {
+      margin-top: 2rem;
+    }
+
+    .meta-label {
+      margin-bottom: 2rem;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtns = document.querySelectorAll('.toggle-btn');
+    const featuresBasic = document.getElementById('features-basic');
+    const featuresComplete = document.getElementById('features-complete');
+    const titleEl = document.getElementById('package-title');
+    const priceEl = document.getElementById('price-display');
+    const btnEl = document.getElementById('action-btn');
+
+    toggleBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        toggleBtns.forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+
+        const target = e.target.getAttribute('data-target');
+
+        if (target === 'basic') {
+          titleEl.textContent = 'Pachet de Bază';
+          priceEl.textContent = '1,499';
+          btnEl.innerHTML = 'Stabilește o discuție ✨';
+          featuresBasic.style.display = 'flex';
+          featuresComplete.style.display = 'none';
+        } else {
+          titleEl.textContent = 'Pachet Complet';
+          priceEl.textContent = '2,499';
+          btnEl.innerHTML = 'Începe proiectul ✨';
+          featuresBasic.style.display = 'none';
+          featuresComplete.style.display = 'flex';
+        }
+      });
+    });
+  });
+</script>

@@ -1,0 +1,143 @@
+---
+---
+<section class="section-strategy-pillars" id="strategy-pillars">
+  <div class="container">
+    <div class="sp-header text-center">
+      <span class="weroast-badge-pill" style="margin-bottom: 1.25rem;">
+        Păstrăm ceea ce are valoare
+      </span>
+      <h2 class="sp-title">
+        Nu totul trebuie refăcut.
+      </h2>
+      <p class="sp-desc">
+        Conținuturile, paginile, URL-urile, funcțiile și elementele de brand existente pot avea în continuare valoare. Nu preluăm automat totul, dar nici nu eliminăm ceva doar pentru că website-ul este relansat.
+      </p>
+    </div>
+
+    <div class="sp-grid">
+      
+      <div class="sp-card card-keep">
+        <div class="sp-card-content">
+          <h3 class="sp-card-title">Păstrăm</h3>
+          <p class="sp-card-text">
+            Ceea ce este relevant, funcționează și se potrivește noului obiectiv poate fi preluat.
+          </p>
+        </div>
+      </div>
+
+      <div class="sp-card card-improve">
+        <div class="sp-card-content">
+          <h3 class="sp-card-title">Îmbunătățim</h3>
+          <p class="sp-card-text">
+            Ceea ce are o bază bună este revizuit țintit la nivel de conținut, navigare, design sau funcție.
+          </p>
+        </div>
+      </div>
+
+      <div class="sp-card card-rebuild">
+        <div class="sp-card-content">
+          <h3 class="sp-card-title">Reconstruim</h3>
+          <p class="sp-card-text">
+            Dacă structura sau tehnologia nu mai susțin cerințele actuale, aceste componente sunt reconstruite pe o bază potrivită.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sp-footer">
+      <p>
+        Astfel rezultă o arie de proiect justificată, nu o reconstrucție completă după un model standard.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-strategy-pillars {
+    padding: 6rem 0;
+    background: var(--bg-page);
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+  }
+  
+  .sp-header {
+    max-width: 750px;
+    margin: 0 auto 4rem;
+  }
+  .sp-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 800;
+    color: var(--brand-navy);
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+  }
+  .sp-desc {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+  }
+
+  .sp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+
+  .sp-card {
+    background: #ffffff;
+    border-radius: var(--radius-lg);
+    border-top: 6px solid transparent;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2.5rem;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .sp-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .card-keep { border-top-color: #10b981; }
+  .card-improve { border-top-color: #3b82f6; }
+  .card-rebuild { border-top-color: #f59e0b; }
+
+  .sp-card-content {
+    flex-grow: 1;
+  }
+
+  .sp-card-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--brand-navy);
+    margin-bottom: 1rem;
+  }
+
+  .sp-card-text {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .sp-footer {
+    text-align: center;
+    max-width: 650px;
+    margin: 4rem auto 0;
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: var(--radius-md);
+    border: 1px dashed var(--border-light);
+    color: var(--text-dark);
+    font-weight: 500;
+  }
+
+  @media (max-width: 900px) {
+    .sp-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

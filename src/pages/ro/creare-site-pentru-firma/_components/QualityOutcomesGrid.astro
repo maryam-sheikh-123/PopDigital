@@ -1,0 +1,268 @@
+---
+---
+<section class="section-quality" id="quality">
+  <div class="container relative z-10">
+    
+    <div class="quality-grid">
+      
+      <!-- Text Column (md:col-span-6) -->
+      <div class="text-column">
+        <div class="text-inner">
+          <span class="starburst-badge">Mai mult decât o suprafață atractivă</span>
+          <h2 class="quality-title">
+            Ce trebuie să ofere website-ul în activitatea de zi cu zi.
+          </h2>
+          <p class="quality-desc">
+            Un website eficient nu doar arată bine, ci funcționează perfect în fundal. Am structurat elementele cheie pe care ne bazăm pentru a asigura calitatea. Explorează pachetul de caracteristici esențiale.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Fan Column (md:col-span-6) -->
+      <div class="deck-column">
+        <!-- Fanned Deck Wrapper with min-h-[550px] and mb-16 -->
+        <div class="fan-wrapper">
+          
+          <!-- Card 1 (Leftmost) -->
+          <div class="deck-card card-dark card-1 z-10">
+            <div class="card-inner">
+              <h3 class="card-title">Ușor de înțeles</h3>
+              <hr class="card-rule">
+              <p class="card-text">Vizitatorii recunosc rapid oferta, relevanța și următorul pas.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 (Mid-Left) -->
+          <div class="deck-card card-light card-2 z-20">
+            <div class="card-inner">
+              <h3 class="card-title">Util pe dispozitive</h3>
+              <hr class="card-rule">
+              <p class="card-text">Conținutul și navigarea funcționează perfect pe orice ecran.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 (Mid-Right) -->
+          <div class="deck-card card-dark card-3 z-30">
+            <div class="card-inner">
+              <h3 class="card-title">Corect tehnic</h3>
+              <hr class="card-rule">
+              <p class="card-text">Performanța, structura semantică și bazele SEO asigurate.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 (Rightmost) -->
+          <div class="deck-card card-light card-4 z-40">
+            <div class="card-inner">
+              <h3 class="card-title">Ușor de extins</h3>
+              <hr class="card-rule">
+              <p class="card-text">Baza tehnică este aleasă după cerințe, nu după o platformă impusă.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-quality {
+    padding: 6rem 0;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+  }
+  
+  /* 12-Column Grid Layout (grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-20) */
+  .quality-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem; /* gap-10 */
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .quality-grid {
+      grid-template-columns: repeat(12, 1fr);
+      gap: 5rem; /* md:gap-20 */
+    }
+  }
+
+  /* Text Column (md:col-span-6 flex flex-col justify-center) */
+  .text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (min-width: 1024px) {
+    .text-column {
+      grid-column: span 5 / span 5; /* Actually taking 5 cols for better spacing */
+      padding-right: 2rem;
+    }
+  }
+
+  .text-inner {
+    max-width: 500px;
+  }
+  
+  .starburst-badge {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: #f1f5f9;
+    color: var(--brand-navy, #1e293b);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .quality-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    color: var(--brand-navy, #0f172a);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .quality-desc {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #475569;
+  }
+
+  /* Deck Column (md:col-span-6) */
+  .deck-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .deck-column {
+      grid-column: span 7 / span 7; /* Giving cards 7 columns of space */
+    }
+  }
+
+  /* Centered Wrapper matching relative min-h-[550px] w-full mb-16 flex items-center justify-center */
+  .fan-wrapper {
+    position: relative;
+    min-height: 550px; /* min-h-[550px] to prevent bleed */
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 4rem; /* mb-16 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Shared Absolute Card Styles */
+  .deck-card {
+    position: absolute;
+    width: 260px; /* w-72 approx to fit */
+    height: 330px; /* h-80 */
+    border-radius: 1.5rem; /* rounded-3xl */
+    padding: 2rem 1.5rem; /* p-8 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: bottom center;
+    cursor: default;
+  }
+
+  .deck-card:hover {
+    transform: rotate(0deg) scale(1.05) translateY(-20px) !important;
+    z-index: 50 !important;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Fanned Transforms (Desktop) */
+  .card-1 { transform: rotate(-14deg) translateX(-4rem); }
+  .card-2 { transform: rotate(-5deg) translateX(-1rem); }
+  .card-3 { transform: rotate(5deg) translateX(1rem); }
+  .card-4 { transform: rotate(14deg) translateX(4rem); }
+
+  /* Z-Indexing */
+  .z-10 { z-index: 10; }
+  .z-20 { z-index: 20; }
+  .z-30 { z-index: 30; }
+  .z-40 { z-index: 40; }
+
+  /* Card Color Variants */
+  .card-light {
+    background-color: #ffffff;
+    color: var(--brand-navy, #0f172a);
+    border: 1px solid rgba(0, 0, 0, 0.05); 
+  }
+
+  .card-dark {
+    background-color: var(--brand-navy, #0f172a); 
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Card Internal Content */
+  .card-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .card-rule {
+    border: 0;
+    height: 1.5px;
+    margin: 0 0 auto 0; 
+    background: currentColor;
+    opacity: 0.2;
+    width: 100%;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 2rem; 
+    font-weight: 500;
+  }
+
+  .card-light .card-text { color: #475569; }
+  .card-dark .card-text { color: #cbd5e1; }
+
+  /* Mobile Overrides to preserve fan but shrink it */
+  @media (max-width: 1023px) {
+    .fan-wrapper {
+      min-height: 480px;
+      margin-bottom: 2rem;
+      transform: scale(0.9); 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .fan-wrapper {
+      min-height: 420px;
+      transform: scale(0.75); 
+    }
+    
+    .card-1 { transform: rotate(-10deg) translateX(-3rem); }
+    .card-2 { transform: rotate(-3deg) translateX(-1rem); }
+    .card-3 { transform: rotate(3deg) translateX(1rem); }
+    .card-4 { transform: rotate(10deg) translateX(3rem); }
+  }
+</style>

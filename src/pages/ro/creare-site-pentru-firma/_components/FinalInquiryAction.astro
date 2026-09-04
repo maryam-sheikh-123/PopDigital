@@ -1,0 +1,146 @@
+---
+---
+<section class="section-final-inquiry" id="inquiry">
+  <div class="container">
+    <div class="cta-banner">
+      
+      <div class="cta-content">
+        <span class="weroast-badge-pill" style="margin-bottom: 1.5rem; background: rgba(255,255,255,0.15); color: #ffffff; border-color: rgba(255,255,255,0.3);">
+          Your new presence
+        </span>
+        <h2 class="cta-title">
+          What do you want to build for your company?
+        </h2>
+        <p class="cta-desc">
+          Tell us what your company does, what already exists, and what you want to achieve. You don't need a complete website concept. Gabriel Pop will answer you personally.
+        </p>
+        
+        <div class="cta-action">
+          <a href="/contact/" class="btn-cta-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            Discuss the new presence
+          </a>
+        </div>
+      </div>
+
+      <div class="cta-image-col">
+        <!-- Replaced broken hearts image with a professional representation -->
+        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Professional Consultation" class="cta-image">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-final-inquiry {
+    padding: 6rem 0 8rem;
+    background: #ffffff;
+  }
+
+  .cta-banner {
+    position: relative;
+    background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-purple) 100%);
+    border-radius: var(--radius-xl);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(105, 83, 138, 0.2);
+  }
+
+  .cta-content {
+    padding: 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 2;
+  }
+
+  .cta-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 3.5vw, 3rem);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.02em;
+  }
+
+  .cta-desc {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    max-width: 450px;
+  }
+
+  .cta-action {
+    display: flex;
+  }
+
+  .btn-cta-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #ffffff;
+    color: var(--brand-purple);
+    padding: 1rem 2.2rem;
+    border-radius: var(--radius-full);
+    font-size: 1.05rem;
+    font-weight: 700;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .search-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .btn-cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+  }
+
+  .cta-image-col {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+  }
+
+  .cta-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* Soft blend into the banner */
+    mask-image: linear-gradient(to right, transparent 0%, black 20%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
+  }
+
+  @media (max-width: 900px) {
+    .cta-banner {
+      grid-template-columns: 1fr;
+    }
+    
+    .cta-content {
+      padding: 4rem 2.5rem;
+    }
+    
+    .cta-image-col {
+      min-height: 300px;
+    }
+    
+    .cta-image {
+      mask-image: linear-gradient(to bottom, transparent 0%, black 20%);
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%);
+    }
+  }
+</style>

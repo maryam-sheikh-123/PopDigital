@@ -1,0 +1,276 @@
+---
+---
+<section class="section-prof-hero" id="hero">
+  <div class="container prof-hero-container">
+    
+    <!-- Left Column: Content -->
+    <div class="prof-hero-content">
+      <div class="prof-hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        Professional start
+      </div>
+      <h1 class="prof-hero-title">
+        Construim împreună website-ul și prezența companiei dumneavoastră, de la zero.
+      </h1>
+      <p class="prof-hero-lead">
+        Doriți să vă prezentați profesional pentru prima dată sau să înlocuiți o soluție provizorie? Creăm o prezență potrivită companiei – de la mesajele principale și design până la implementarea tehnică.
+      </p>
+      <p class="prof-hero-body">
+        Gabriel Pop conduce personal proiectul și rămâne principala persoană de contact, de la prima discuție până la predare.
+      </p>
+      <div class="prof-hero-ctas">
+        <a href="/ro/contact/" class="btn-prof-primary">Discutați despre noua prezență</a>
+      </div>
+    </div>
+    
+    <!-- Right Column: Visual & Stats -->
+    <div class="prof-hero-visual-wrapper">
+      
+      <!-- Image & Blobs Area -->
+      <div class="prof-hero-image-area">
+        <!-- Decorative Blobs -->
+        <div class="blob blob-top-right"></div>
+        <div class="blob blob-bottom-left"></div>
+        <svg class="decorative-circles" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="48" />
+          <circle cx="50" cy="50" r="38" />
+        </svg>
+
+        <!-- Arched Image Container -->
+        <div class="arched-frame">
+          <img src="/images/gabriel-antonio-pop.png" alt="Gabriel Pop" class="arched-img">
+        </div>
+      </div>
+      
+      <!-- Stats Column -->
+      <div class="prof-hero-stats">
+        <div class="stat-item">
+          <span class="stat-val">100%</span>
+          <span class="stat-label">Personal</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">Rapid</span>
+          <span class="stat-label">Fast Turnaround</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">Clar</span>
+          <span class="stat-label">Clear Communication</span>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .section-prof-hero {
+    padding-top: calc(var(--header-height) + 4rem);
+    padding-bottom: 5rem;
+    background: #fdfaf6; /* Soft warm background reminiscent of the reference, matching the brand theme's lighter shades */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .prof-hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  /* Content Styling */
+  .prof-hero-content {
+    max-width: 580px;
+    z-index: 2;
+  }
+  .prof-hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--brand-purple);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.25rem;
+  }
+  .eyebrow-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--brand-purple);
+    border-radius: 50%;
+  }
+  .prof-hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--brand-navy);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+  .prof-hero-lead {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  .prof-hero-body {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+  }
+  .prof-hero-ctas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .btn-prof-primary {
+    background: var(--brand-navy);
+    color: #fff;
+    padding: 1.1rem 2.5rem;
+    border-radius: var(--radius-full);
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  .btn-prof-primary:hover {
+    background: #0f1b30;
+    transform: translateY(-2px);
+  }
+
+  /* Visual & Stats Wrapper */
+  .prof-hero-visual-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  /* Image & Blobs Area */
+  .prof-hero-image-area {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Decorative Blobs (Matching the reference's organic shapes but using brand colors) */
+  .blob {
+    position: absolute;
+    z-index: 1;
+    background: var(--brand-purple-soft); /* Using brand accent color */
+  }
+  .blob-top-right {
+    top: -20px;
+    right: -40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    transform: rotate(25deg);
+    background: #fde6d5; /* Soft peach/orange matching the reference */
+  }
+  .blob-bottom-left {
+    bottom: -30px;
+    left: -30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background: #ffd8c4;
+  }
+  .decorative-circles {
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 120px;
+    height: 120px;
+    z-index: 0;
+    fill: none;
+    stroke: #ffb499;
+    stroke-width: 1;
+  }
+
+  /* Arched Image Container */
+  .arched-frame {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 3.5 / 4.5;
+    border-radius: 300px 300px 12px 12px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    background: #e2e8f0; /* Fallback skeleton color */
+  }
+  .arched-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* Soften the portrait to fit the elegant editorial look */
+    filter: contrast(1.02) saturate(1.05);
+  }
+
+  /* Stats Column */
+  .prof-hero-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    flex-shrink: 0;
+    padding-left: 1rem;
+    position: relative;
+    z-index: 3;
+  }
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .stat-val {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--brand-navy);
+    line-height: 1;
+  }
+  .stat-label {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .prof-hero-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 4rem;
+    }
+    .prof-hero-content {
+      margin: 0 auto;
+    }
+    .prof-hero-ctas {
+      justify-content: center;
+    }
+    .prof-hero-visual-wrapper {
+      flex-direction: column;
+      gap: 4rem;
+    }
+    .prof-hero-stats {
+      flex-direction: row;
+      justify-content: center;
+      gap: 3rem;
+      padding-left: 0;
+    }
+    .stat-item {
+      align-items: center;
+    }
+  }
+</style>
