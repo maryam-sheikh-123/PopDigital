@@ -1,0 +1,26 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/common/Header.astro';
+import Footer from '../../components/common/Footer.astro';
+
+import PortfolioHero from './_components/PortfolioHero.astro';
+import FeaturedOwnProject from './_components/FeaturedOwnProject.astro';
+import OwnProjectRelevance from './_components/OwnProjectRelevance.astro';
+import FinalPortfolioInquiry from './_components/FinalPortfolioInquiry.astro';
+---
+
+<Layout 
+  title="Portfolio | Pop Digital Solutions EU" 
+  description="A transparent presentation of our own Pop Digital Solutions project – with the initial situation, our role, decisions and implementation.">
+  
+  <Header />
+
+  <main>
+    <PortfolioHero />
+    <FeaturedOwnProject />
+    <OwnProjectRelevance />
+    <FinalPortfolioInquiry />
+  </main>
+
+  <Footer />
+</Layout>

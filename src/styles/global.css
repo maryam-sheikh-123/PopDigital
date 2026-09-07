@@ -1,5 +1,8 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Tailwind directives removed to rely entirely on Astro integration - RESTORED */
 /* ==========================================================================
    POP DIGITAL SOLUTIONS — WEROAST DESIGN SYSTEM
    Inspired by weroast.design aesthetics with Post-it notes, interactive

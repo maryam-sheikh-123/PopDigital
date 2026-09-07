@@ -1,11 +1,12 @@
 ---
+const isRo = Astro.url.pathname.startsWith('/ro');
 ---
 <header class="site-header" id="main-header">
   <div class="container header-inner">
 
     <!-- Logo only — no pill tabs -->
-    <a href="/" class="nav-logo-link" aria-label="Pop Digital Solutions — Startseite">
-      <img src="/images/pop-digital-solutions-master.svg" alt="Pop Digital Solutions" class="nav-logo-img">
+    <a href={isRo ? "/ro/" : "/"} class="nav-logo-link" aria-label="Pop Digital Solutions — Startseite">
+      <img src="/images/pop-digital-solutions-master.svg" alt="Pop Digital Solutions" class="nav-logo-img h-9 w-auto flex-shrink-0" width="200" height="36">
     </a>
 
     <!-- Desktop Navigation -->
@@ -20,87 +21,87 @@
           aria-expanded="false"
           id="loesungen-trigger"
         >
-          Lösungen
+          {isRo ? "Soluții" : "Lösungen"}
           <svg class="dropdown-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M6 9l6 6 6-6"/>
           </svg>
         </button>
 
         <div class="nav-dropdown-panel" id="loesungen-panel" role="menu" aria-labelledby="loesungen-trigger">
-          <a href="/ro/creare-site-pentru-firma/" class="dropdown-item" role="menuitem">
+          <a href={isRo ? "/ro/creare-site-pentru-firma/" : "/professionell-starten/"} class="dropdown-item" role="menuitem">
             <span class="dropdown-item-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg class="w-5 h-5 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
               </svg>
             </span>
             <span class="dropdown-item-text">
-              <strong>Professionell starten</strong>
-              <small>Website, Marke und Grundlagen aufbauen</small>
+              <strong>{isRo ? "Creare site pentru firmă" : "Professionell starten"}</strong>
+              <small>{isRo ? "Website, brand și fundație" : "Website, Marke und Grundlagen aufbauen"}</small>
             </span>
           </a>
-          <a href="/ro/refacere-si-optimizare-site/" class="dropdown-item" role="menuitem">
+          <a href={isRo ? "/ro/refacere-si-optimizare-site/" : "/website-relaunch/"} class="dropdown-item" role="menuitem">
             <span class="dropdown-item-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg class="w-5 h-5 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/>
                 <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
               </svg>
             </span>
             <span class="dropdown-item-text">
-              <strong>Website-Relaunch</strong>
-              <small>Einen bestehenden Auftritt gezielt modernisieren</small>
+              <strong>{isRo ? "Refacere site" : "Website-Relaunch"}</strong>
+              <small>{isRo ? "Modernizarea unui site existent" : "Einen bestehenden Auftritt gezielt modernisieren"}</small>
             </span>
           </a>
-          <a href="/ro/marketing-design/" class="dropdown-item" role="menuitem">
+          <a href={isRo ? "/ro/marketing-design/" : "/marketing-design/"} class="dropdown-item" role="menuitem">
             <span class="dropdown-item-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg class="w-5 h-5 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
                 <path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/>
               </svg>
             </span>
             <span class="dropdown-item-text">
-              <strong>Marketing &amp; Design</strong>
-              <small>Marke, Kommunikation und Sichtbarkeit stärken</small>
+              <strong>{isRo ? "Marketing & Design" : "Marketing & Design"}</strong>
+              <small>{isRo ? "Consolidarea mărcii și vizibilității" : "Marke, Kommunikation und Sichtbarkeit stärken"}</small>
             </span>
           </a>
-          <a href="/ro/solutii-digitale-personalizate/" class="dropdown-item" role="menuitem">
+          <a href={isRo ? "/ro/solutii-digitale-personalizate/" : "/individuelle-loesungen/"} class="dropdown-item" role="menuitem">
             <span class="dropdown-item-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg class="w-5 h-5 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
               </svg>
             </span>
             <span class="dropdown-item-text">
-              <strong>Individuelle Lösungen</strong>
-              <small>Abläufe automatisieren und Systeme verbinden</small>
+              <strong>{isRo ? "Soluții digitale personalizate" : "Individuelle Lösungen"}</strong>
+              <small>{isRo ? "Automatizare fluxuri și sisteme" : "Abläufe automatisieren und Systeme verbinden"}</small>
             </span>
           </a>
-          <a href="/ro/echipare-pentru-companii/" class="dropdown-item" role="menuitem">
+          <a href={isRo ? "/ro/echipare-pentru-companii/" : "/firmenausstattung/"} class="dropdown-item" role="menuitem">
             <span class="dropdown-item-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg class="w-5 h-5 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
               </svg>
             </span>
             <span class="dropdown-item-text">
-              <strong>Firmenausstattung</strong>
-              <small>Bekleidung, Drucksorten und Werbetechnik</small>
+              <strong>{isRo ? "Echipare pentru companii" : "Firmenausstattung"}</strong>
+              <small>{isRo ? "Îmbrăcăminte, print și promoționale" : "Bekleidung, Drucksorten und Werbetechnik"}</small>
             </span>
           </a>
         </div>
       </div>
 
-      <a href="/ro/portfoliu/" class="nav-link-simple">Portfolio</a>
-      <a href="/ro/despre-noi/" class="nav-link-simple">Despre noi</a>
+      <a href={isRo ? "/ro/portfoliu/" : "/portfolio/"} class="nav-link-simple">Portfolio</a>
+      <a href={isRo ? "/ro/despre-noi/" : "/about/"} class="nav-link-simple">{isRo ? "Despre noi" : "Über uns"}</a>
 
       <!-- Language Switcher -->
       <div class="nav-lang-switcher">
-        <button type="button" class="lang-btn lang-btn--active" aria-current="true" aria-label="Deutsch (aktiv)">DE</button>
+        <a href="/" class={isRo ? "lang-btn" : "lang-btn lang-btn--active"} style="text-decoration:none;">DE</a>
         <span class="lang-divider" aria-hidden="true">|</span>
-        <button type="button" class="lang-btn" aria-label="Română">RO</button>
+        <a href="/ro/" class={isRo ? "lang-btn lang-btn--active" : "lang-btn"} style="text-decoration:none;">RO</a>
       </div>
 
       <!-- CTA -->
-      <a href="/ro/contact/" class="btn-book-sprint">
-        <span>Solicită proiect</span>
+      <a href={isRo ? "/ro/contact/" : "/projekt-anfragen/"} class="btn-book-sprint">
+        <span>{isRo ? "Solicită proiect" : "Projekt anfragen"}</span>
         <img src="/images/gabriel-antonio-pop.png" alt="Gabriel Pop" class="avatar-badge-img">
       </a>
     </nav>
@@ -116,39 +117,39 @@
   <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
     <div class="mobile-nav-content">
-      <a href="/" class="mobile-nav-link active">Home</a>
+      <a href={isRo ? "/ro/" : "/"} class="mobile-nav-link active">Home</a>
 
       <!-- Mobile Lösungen accordion -->
       <div class="mobile-nav-accordion">
         <button type="button" class="mobile-nav-link mobile-accordion-trigger" id="mobile-loesungen-btn" aria-expanded="false">
-          <span>Lösungen</span>
+          <span>{isRo ? "Soluții" : "Lösungen"}</span>
           <svg class="mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M6 9l6 6 6-6"/>
           </svg>
         </button>
         <div class="mobile-loesungen-panel" id="mobile-loesungen-panel" aria-hidden="true">
-          <a href="/ro/creare-site-pentru-firma/" class="mobile-sub-link">Professionell starten</a>
-          <a href="/ro/refacere-si-optimizare-site/" class="mobile-sub-link">Website-Relaunch</a>
-          <a href="/ro/marketing-design/" class="mobile-sub-link">Marketing &amp; Design</a>
-          <a href="/ro/solutii-digitale-personalizate/" class="mobile-sub-link">Individuelle Lösungen</a>
-          <a href="/ro/echipare-pentru-companii/" class="mobile-sub-link">Firmenausstattung</a>
+          <a href={isRo ? "/ro/creare-site-pentru-firma/" : "/professionell-starten/"} class="mobile-sub-link">{isRo ? "Creare site pentru firmă" : "Professionell starten"}</a>
+          <a href={isRo ? "/ro/refacere-si-optimizare-site/" : "/website-relaunch/"} class="mobile-sub-link">{isRo ? "Refacere site" : "Website-Relaunch"}</a>
+          <a href={isRo ? "/ro/marketing-design/" : "/marketing-design/"} class="mobile-sub-link">{isRo ? "Marketing & Design" : "Marketing & Design"}</a>
+          <a href={isRo ? "/ro/solutii-digitale-personalizate/" : "/individuelle-loesungen/"} class="mobile-sub-link">{isRo ? "Soluții digitale personalizate" : "Individuelle Lösungen"}</a>
+          <a href={isRo ? "/ro/echipare-pentru-companii/" : "/firmenausstattung/"} class="mobile-sub-link">{isRo ? "Echipare pentru companii" : "Firmenausstattung"}</a>
         </div>
       </div>
 
-      <a href="/portfolio/" class="mobile-nav-link">Portfolio</a>
-      <a href="/about/" class="mobile-nav-link">Über uns</a>
+      <a href={isRo ? "/ro/portfoliu/" : "/portfolio/"} class="mobile-nav-link">Portfolio</a>
+      <a href={isRo ? "/ro/despre-noi/" : "/about/"} class="mobile-nav-link">{isRo ? "Despre noi" : "Über uns"}</a>
 
       <div class="mobile-nav-divider"></div>
 
       <!-- Mobile Language -->
       <div class="mobile-lang-row">
-        <button type="button" class="lang-btn lang-btn--active">DE</button>
+        <a href="/" class={isRo ? "lang-btn" : "lang-btn lang-btn--active"} style="text-decoration:none;">DE</a>
         <span class="lang-divider" aria-hidden="true">|</span>
-        <button type="button" class="lang-btn">RO</button>
+        <a href="/ro/" class={isRo ? "lang-btn lang-btn--active" : "lang-btn"} style="text-decoration:none;">RO</a>
       </div>
 
-      <a href="/ro/contact/" class="btn-book-sprint" style="width:100%;justify-content:center;margin-top:0.25rem;text-decoration:none;">
-        <span>Solicită proiect</span>
+      <a href={isRo ? "/ro/contact/" : "/projekt-anfragen/"} class="btn-book-sprint" style="width:100%;justify-content:center;margin-top:0.25rem;text-decoration:none;">
+        <span>{isRo ? "Solicită proiect" : "Projekt anfragen"}</span>
       </a>
     </div>
   </div>

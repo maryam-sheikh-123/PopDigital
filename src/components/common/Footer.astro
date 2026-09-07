@@ -1,4 +1,5 @@
 ---
+const isRo = Astro.url.pathname.startsWith('/ro');
 ---
 <footer class="site-footer" id="kontakt">
     <div class="container">
@@ -6,28 +7,27 @@
         <div>
           <img src="/images/pop-digital-solutions-master.svg" alt="Pop Digital Solutions" class="footer-logo">
           <p class="footer-brand-desc">
-            Websites, Marketing &amp; Design, digitale Lösungen und Firmenausstattung – persönlich geführt und klar
-            koordiniert.
+            {isRo ? "Creare site, Marketing & Design, soluții digitale și echipare pentru companii – gestionate personal și coordonate clar." : "Websites, Marketing & Design, digitale Lösungen und Firmenausstattung – persönlich geführt und klar koordiniert."}
           </p>
         </div>
 
         <div>
-          <h4 class="footer-heading">Lösungen</h4>
+          <h4 class="footer-heading">{isRo ? "Soluții" : "Lösungen"}</h4>
           <ul class="footer-links-list">
-            <li><a href="/ro/creare-site-pentru-firma/">Professionell starten</a></li>
-            <li><a href="/ro/refacere-si-optimizare-site/">Website-Relaunch</a></li>
-            <li><a href="/ro/marketing-design/">Marketing &amp; Design</a></li>
-            <li><a href="/ro/solutii-digitale-personalizate/">Individuelle Lösungen</a></li>
-            <li><a href="/ro/echipare-pentru-companii/">Firmenausstattung</a></li>
+            <li><a href={isRo ? "/ro/creare-site-pentru-firma/" : "/professionell-starten/"}>{isRo ? "Creare site pentru firmă" : "Professionell starten"}</a></li>
+            <li><a href={isRo ? "/ro/refacere-si-optimizare-site/" : "/website-relaunch/"}>{isRo ? "Refacere site" : "Website-Relaunch"}</a></li>
+            <li><a href={isRo ? "/ro/marketing-design/" : "/marketing-design/"}>{isRo ? "Marketing & Design" : "Marketing & Design"}</a></li>
+            <li><a href={isRo ? "/ro/solutii-digitale-personalizate/" : "/individuelle-loesungen/"}>{isRo ? "Soluții digitale personalizate" : "Individuelle Lösungen"}</a></li>
+            <li><a href={isRo ? "/ro/echipare-pentru-companii/" : "/firmenausstattung/"}>{isRo ? "Echipare pentru companii" : "Firmenausstattung"}</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-heading">Unternehmen</h4>
+          <h4 class="footer-heading">{isRo ? "Companie" : "Unternehmen"}</h4>
           <ul class="footer-links-list">
-            <li><a href="/ro/portfoliu/">Portfolio</a></li>
-            <li><a href="/ro/despre-noi/">Despre noi</a></li>
-            <li><a href="/ro/contact/">Solicită proiect</a></li>
+            <li><a href={isRo ? "/ro/portfoliu/" : "/portfolio/"}>Portfolio</a></li>
+            <li><a href={isRo ? "/ro/despre-noi/" : "/about/"}>{isRo ? "Despre noi" : "Über uns"}</a></li>
+            <li><a href={isRo ? "/ro/contact/" : "/projekt-anfragen/"}>{isRo ? "Solicită proiect" : "Projekt anfragen"}</a></li>
           </ul>
         </div>
 
@@ -44,7 +44,7 @@
       </div>
 
       <div class="footer-bottom">
-        <span>© 2026 Pop Digital Solutions e.U.</span>
+        <span>© {new Date().getFullYear()} Pop Digital Solutions e.U.</span>
       </div>
     </div>
   </footer>

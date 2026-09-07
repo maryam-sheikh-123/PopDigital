@@ -1,0 +1,77 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/common/Header.astro';
+import Footer from '../../components/common/Footer.astro';
+
+import StrategyPillars from './_components/StrategyPillars.astro';
+import PainPointsGrid from './_components/PainPointsGrid.astro';
+import SixPillarsGrid from './_components/SixPillarsGrid.astro';
+import MigrationTerminal from './_components/MigrationTerminal.astro';
+import ProcessTimeline from './_components/ProcessTimeline.astro';
+import RelaunchCTA from './_components/RelaunchCTA.astro';
+---
+
+<Layout 
+  title="Website relaunch in Austria | Pop Digital Solutions" 
+  description="Website relaunch with assessment of the existing situation, clear prioritization and controlled migration - personally coordinated by Gabriel Pop.">
+  
+  <Header />
+
+  <main>
+    <!-- HERO SECTION WITH INLINE CSS FALLBACK -->
+    <section id="hero" style="position: relative; overflow: hidden; background-color: #f4f7f6; padding-top: 10rem; padding-bottom: 5rem;">
+      <div class="container" style="position: relative; z-index: 10; max-w: 1280px; margin: 0 auto; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
+        
+        <!-- Left Text Column -->
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 600px;">
+          <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: #ffffff; border: 1px solid rgba(226,232,240,0.5); padding: 0.375rem 1rem; border-radius: 9999px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; color: #334155; box-shadow: 0 1px 2px rgba(0,0,0,0.05); align-self: flex-start;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981;"></span>
+            EVALUARE ȘI PLANIFICARE DISPONIBILĂ
+          </div>
+          
+          <h1 style="font-family: var(--font-heading); font-size: clamp(2.25rem, 5vw, 3.5rem); font-weight: 500; color: #0f172a; line-height: 1.15; letter-spacing: -0.02em; margin: 0;">
+            Reexaminăm website-ul dumneavoastră fără a renunța inutil la ceea ce funcționează deja.
+          </h1>
+          
+          <p style="font-size: clamp(1.125rem, 2vw, 1.25rem); color: #334155; line-height: 1.6; margin: 0;">
+            Website-ul nu mai corespunde companiei, pare depășit tehnic sau vizual, sau nu mai susține obiectivele actuale? Analizăm ce există și stabilim ce poate fi păstrat, ce trebuie îmbunătățit și ce trebuie reconstruit.
+          </p>
+          
+          <!-- Form -->
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; background: #ffffff; border-radius: 9999px; padding: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border: 1px solid #f1f5f9; width: 100%; margin-top: 0.5rem;">
+            <input type="text" placeholder="Introduceți domeniul (ex: site-ul-tau.ro)" style="flex: 1; border: none; background: transparent; padding: 0.875rem 1.5rem; color: #1e293b; outline: none; min-width: 200px; font-weight: 500; font-size: 1rem;" />
+            <button style="background: #0a0f1c; color: #ffffff; font-weight: 500; padding: 0.875rem 2rem; border-radius: 9999px; cursor: pointer; border: none; transition: background 0.2s; white-space: nowrap;">Evaluare gratuită</button>
+          </div>
+          
+          <!-- Separated Footer -->
+          <div style="display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
+            <div style="display: flex; flex-shrink: 0;">
+              <span style="width: 40px; height: 40px; border-radius: 50%; background: #f8fafc; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px; border: 2px solid #ffffff; color: #475569; box-shadow: 0 1px 2px rgba(0,0,0,0.05); position: relative; z-index: 3;">GP</span>
+              <span style="width: 40px; height: 40px; border-radius: 50%; background: #f8fafc; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px; border: 2px solid #ffffff; color: #475569; box-shadow: 0 1px 2px rgba(0,0,0,0.05); margin-left: -10px; position: relative; z-index: 2;">DEV</span>
+              <span style="width: 40px; height: 40px; border-radius: 50%; background: #f8fafc; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px; border: 2px solid #ffffff; color: #475569; box-shadow: 0 1px 2px rgba(0,0,0,0.05); margin-left: -10px; position: relative; z-index: 1;">SEO</span>
+            </div>
+            <div style="font-size: 0.85rem; color: #475569; line-height: 1.4; font-weight: 500;">
+              <strong style="color: #0f172a; display: block; margin-bottom: 2px;">Gabriel Pop conduce personal relansarea.</strong>
+              Ajută la formarea pașilor următori. <a href="#contact" style="font-weight: bold; color: #0f172a; text-decoration: none;">Adaugă vocea ta</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Column (NO BACKGROUND, INLINE CSS FOR GRID/IMAGE) -->
+        <div style="position: relative; width: 100%; max-height: 480px; overflow: hidden; background-color: transparent;">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" alt="Digital Workspace" style="width: 100%; height: auto; object-fit: cover; border-radius: 1.5rem; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); display: block;" />
+        </div>
+
+      </div>
+    </section>
+
+    <PainPointsGrid />
+    <StrategyPillars />
+    <SixPillarsGrid />
+    <MigrationTerminal />
+    <ProcessTimeline />
+    <RelaunchCTA />
+  </main>
+
+  <Footer />
+</Layout>

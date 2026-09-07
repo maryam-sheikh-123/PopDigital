@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/common/Header.astro';
+import Footer from '../../components/common/Footer.astro';
+
+import SolutionsHero from './_components/SolutionsHero.astro';
+import OperationalDiagnostic from './_components/OperationalDiagnostic.astro';
+import DecisionPathsBranches from './_components/DecisionPathsBranches.astro';
+import AnalysisConceptPhase from './_components/AnalysisConceptPhase.astro';
+import UsableVersionScope from './_components/UsableVersionScope.astro';
+import TechOwnershipMap from './_components/TechOwnershipMap.astro';
+import FinalProblemInquiry from './_components/FinalProblemInquiry.astro';
+---
+
+<Layout 
+  title="Personalized digital solutions | Pop Digital Solutions" 
+  description="We analyze whether the right solution is a standard product, integration, automation, or custom development.">
+  
+  <Header />
+
+  <main>
+    <SolutionsHero />
+    <OperationalDiagnostic />
+    <DecisionPathsBranches />
+    <AnalysisConceptPhase />
+    <UsableVersionScope />
+    <TechOwnershipMap />
+    <FinalProblemInquiry />
+  </main>
+
+  <Footer />
+</Layout>

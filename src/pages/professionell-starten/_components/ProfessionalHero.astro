@@ -1,0 +1,218 @@
+﻿---
+---
+<section class="section-prof-hero" id="hero">
+  <div class="container prof-hero-container">
+    
+    <!-- Left Column: Content -->
+    <div class="prof-hero-content">
+      <div class="prof-hero-eyebrow">
+        Professional start
+      </div>
+      <h1 class="prof-hero-title">
+        Construim impreuna<br>
+        <span class="highlight-text">website-ul si prezenta</span><br>
+        companiei dumneavoastra, de la zero.
+      </h1>
+      <p class="prof-hero-lead">
+        Doriti sa va prezentati profesional pentru prima data sau sa inlocuiti o solutie provizorie? Cream o prezenta potrivita companiei – de la mesajele principale si design pana la implementarea tehnica.
+      </p>
+      <div class="prof-hero-ctas">
+        <a href="/projekt-anfragen/" class="btn-prof-primary">Discutati despre noua prezenta</a>
+        <a href="#starting-points" class="btn-prof-secondary">Afla mai multe</a>
+      </div>
+      <div class="prof-hero-timer">
+        <span class="timer-label">Gabriel Pop conduce personal proiectul</span>
+      </div>
+    </div>
+    
+    <!-- Right Column: Visual & Stats -->
+    <div class="prof-hero-visual-wrapper">
+      
+      <!-- Staggered Circular/Pill Images -->
+      <div class="hero-image-grid">
+        <div class="hero-img-pill hero-img-top-right">
+          <img src="/images/gabriel-antonio-pop.png" alt="Gabriel Pop">
+        </div>
+        <div class="hero-img-pill hero-img-center">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Echipa in actiune" class="mock-image" style="object-fit: cover;">
+        </div>
+        <div class="hero-img-pill hero-img-bottom-right">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Design spatiu de lucru" class="mock-image" style="object-fit: cover;">
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .section-prof-hero {
+    padding-top: calc(var(--header-height) + 6rem);
+    padding-bottom: 5rem;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .prof-hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  /* Content Styling */
+  .prof-hero-content {
+    z-index: 2;
+  }
+  .prof-hero-eyebrow {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+  }
+  .prof-hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 4vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--brand-navy);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+  }
+  .highlight-text {
+    color: #eab308;
+  }
+  .prof-hero-lead {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+    max-width: 90%;
+  }
+  .prof-hero-ctas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .btn-prof-primary {
+    background: #60a5fa;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: var(--radius-full);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .btn-prof-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+  .btn-prof-secondary {
+    background: transparent;
+    border: 1px solid #cbd5e1;
+    color: var(--brand-navy);
+    padding: 1rem 2rem;
+    border-radius: var(--radius-full);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color 0.2s ease;
+  }
+  .btn-prof-secondary:hover {
+    border-color: var(--brand-navy);
+  }
+  
+  .prof-hero-timer {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--brand-navy);
+  }
+
+  /* Visual Wrapper */
+  .prof-hero-visual-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 500px;
+  }
+
+  .hero-image-grid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-img-pill {
+    position: absolute;
+    border-radius: 9999px;
+    overflow: hidden;
+  }
+  .hero-img-pill img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .mock-image {
+    width: 100%;
+    height: 100%;
+  }
+  .bg-brand-yellow { background-color: #eab308; }
+  .bg-brand-blue { background-color: #60a5fa; }
+
+  .hero-img-top-right {
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 280px;
+    background: #d8b4fe;
+  }
+  
+  .hero-img-center {
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 380px;
+    border-radius: 9999px;
+  }
+
+  .hero-img-bottom-right {
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 250px;
+    background: #60a5fa;
+  }
+
+  @media (max-width: 1024px) {
+    .prof-hero-container {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    .prof-hero-visual-wrapper {
+      min-height: 400px;
+    }
+    .hero-img-center {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .hero-img-top-right {
+      right: 10%;
+    }
+    .hero-img-bottom-right {
+      right: 10%;
+    }
+  }
+</style>
+

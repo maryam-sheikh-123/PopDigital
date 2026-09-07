@@ -1,0 +1,261 @@
+﻿---
+---
+<section class="section-quality" id="quality">
+  <div class="container relative z-10">
+    
+    <div class="quality-header text-center mb-24">
+      <h2 class="quality-title">
+        Ce trebuie sa ofere website-ul in activitatea de zi cu zi.
+      </h2>
+      <p class="quality-desc mx-auto">
+        Un website eficient nu doar arata bine, ci functioneaza perfect in fundal. Am structurat elementele cheie pe care ne bazam pentru a asigura calitatea.
+      </p>
+    </div>
+
+    <!-- Card Fan Interactive Deck -->
+    <div class="fan-wrapper">
+      
+      <!-- Card 1 -->
+      <div class="deck-card card-1 z-10">
+        <div class="card-gradient" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80');"></div>
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="meta-tag">DESIGN</span>
+            <span class="meta-num">01</span>
+          </div>
+          <h3 class="card-title">Usor de inteles</h3>
+          <p class="card-text">Vizitatorii recunosc rapid oferta, relevanta si urmatorul pas.</p>
+          <div class="card-link">Explore &nearr;</div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="deck-card card-2 z-20">
+        <div class="card-gradient" style="background-image: url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=400&q=80');"></div>
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="meta-tag">UX</span>
+            <span class="meta-num">02</span>
+          </div>
+          <h3 class="card-title">Util pe dispozitive</h3>
+          <p class="card-text">Continutul si navigarea functioneaza perfect pe orice ecran.</p>
+          <div class="card-link">Explore &nearr;</div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="deck-card card-3 z-30">
+        <div class="card-gradient" style="background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=400&q=80');"></div>
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="meta-tag">TECH</span>
+            <span class="meta-num">03</span>
+          </div>
+          <h3 class="card-title">Corect tehnic</h3>
+          <p class="card-text">Performanta, structura semantica si bazele SEO asigurate.</p>
+          <div class="card-link">Explore &nearr;</div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="deck-card card-4 z-40">
+        <div class="card-gradient" style="background-image: url('https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&w=400&q=80');"></div>
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="meta-tag">SCALE</span>
+            <span class="meta-num">04</span>
+          </div>
+          <h3 class="card-title">Usor de extins</h3>
+          <p class="card-text">Baza tehnica este aleasa dupa cerinte, nu dupa platforma.</p>
+          <div class="card-link">Explore &nearr;</div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="deck-card card-5 z-20">
+        <div class="card-gradient" style="background-image: url('https://images.unsplash.com/photo-1604871000636-074fa5117945?auto=format&fit=crop&w=400&q=80');"></div>
+        <div class="card-inner">
+          <div class="card-meta">
+            <span class="meta-tag">MARKET</span>
+            <span class="meta-num">05</span>
+          </div>
+          <h3 class="card-title">Prezenta solida</h3>
+          <p class="card-text">Pozitionare care iti evidentiaza afacerea deasupra zgomotului.</p>
+          <div class="card-link">Explore &nearr;</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .section-quality {
+    padding: 8rem 0;
+    background: #000000;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .quality-header {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .quality-title {
+    font-family: var(--font-heading, sans-serif);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .quality-desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .fan-wrapper {
+    position: relative;
+    height: 480px; 
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .deck-card {
+    position: absolute;
+    width: 260px; 
+    height: 380px; 
+    border-radius: 1rem; 
+    background-color: #111111; 
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.6);
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    transform-origin: bottom center;
+    cursor: pointer;
+  }
+
+  /* Initial stacked state */
+  .card-1 { transform: rotate(-12deg) translateX(-180px); z-index: 10; }
+  .card-2 { transform: rotate(-6deg) translateX(-90px); z-index: 20; }
+  .card-3 { transform: rotate(0deg) translateX(0px); z-index: 30; }
+  .card-4 { transform: rotate(6deg) translateX(90px); z-index: 20; }
+  .card-5 { transform: rotate(12deg) translateX(180px); z-index: 10; }
+
+  /* Hover states for fanning out slightly more or elevating */
+  .fan-wrapper:hover .card-1 { transform: rotate(-14deg) translateX(-200px) translateY(10px); }
+  .fan-wrapper:hover .card-2 { transform: rotate(-7deg) translateX(-100px); }
+  .fan-wrapper:hover .card-3 { transform: rotate(0deg) translateX(0px) translateY(-10px); }
+  .fan-wrapper:hover .card-4 { transform: rotate(7deg) translateX(100px); }
+  .fan-wrapper:hover .card-5 { transform: rotate(14deg) translateX(200px) translateY(10px); }
+
+  .deck-card:hover {
+    z-index: 50 !important;
+    transform: scale(1.05) translateY(-30px) !important;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9);
+    border-color: rgba(255,255,255,0.2);
+  }
+
+  .card-gradient {
+    height: 140px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .card-inner {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: rgba(255,255,255,0.2);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+  .meta-tag {
+    background: rgba(255,255,255,0.08);
+    padding: 0.2rem 0.6rem;
+    border-radius: 50px;
+  }
+  .meta-num {
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgba(255,255,255,0.05);
+    line-height: 1;
+    letter-spacing: -0.05em;
+  }
+
+  .card-title {
+    font-family: var(--font-heading, sans-serif);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    line-height: 1.2;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.5);
+    flex-grow: 1;
+  }
+
+  .card-link {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.2s ease;
+    align-self: flex-start;
+  }
+  .deck-card:hover .card-link {
+    background: #fff;
+    color: #000;
+  }
+
+  @media (max-width: 900px) {
+    .fan-wrapper {
+      height: 420px;
+      transform: scale(0.9);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .fan-wrapper {
+      height: 380px;
+      transform: scale(0.7);
+    }
+    .card-1 { transform: rotate(-8deg) translateX(-100px); }
+    .card-2 { transform: rotate(-4deg) translateX(-50px); }
+    .card-4 { transform: rotate(4deg) translateX(50px); }
+    .card-5 { transform: rotate(8deg) translateX(100px); }
+  }
+</style>
